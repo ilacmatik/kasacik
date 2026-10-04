@@ -45,5 +45,14 @@
     "2025": 47000,
     "2026": 58000
   },
-  "rentDeemedExpense": 0.15
+  "rentDeemedExpense": 0.15,
+  "endpoints": {
+    "tefas": "https://www.tefas.gov.tr/api/funds/fonGnlBlgSiraliGetir",
+    "tefasReferer": "https://www.tefas.gov.tr/tr/fon-verileri",
+    "tcmbCardRates": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Bankacilik+Verileri/Kredi_Karti_Islemlerinde_Uygulanacak_Azami_Faiz_Oranlari",
+    "tcmbCpi": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Enflasyon+Verileri/Tuketici+Fiyatlari",
+    "tcmbPpi": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Enflasyon+Verileri/Uretici+Fiyatlari",
+    "harem": "wss://hrmsocketonly.haremaltin.com/socket.io/?EIO=4&transport=websocket",
+    "truncgil": "https://finans.truncgil.com/v4/today.json"
+  }
 }
