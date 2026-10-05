@@ -49,7 +49,7 @@ nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}nav a{background:rgba(2
 <p>Veriler yalnızca uygulamanın çalışması (kayıtlarını göstermek, cihazlar arası eşitlemek ve yedeklemek) için kullanılır. Google Firebase (Cloud Firestore ve Firebase Authentication) altyapısında, şifreli bağlantı üzerinden saklanır. Veriler üçüncü taraflarla paylaşılmaz veya satılmaz.</p>
 <h2>Verilerini silme</h2>
 <p>Uygulamada <strong>Özet → profil simgesi → Hesabı ve tüm verileri sil</strong> adımıyla hesabını ve tüm kayıtlarını kalıcı olarak silebilirsin. Uygulamaya erişemiyorsan aşağıdaki adrese e-posta göndererek silme talebinde bulunabilirsin. Silme talimatı ve talep yolu: <a href="https://ilacmatik.github.io/kasacik/hesap-silme.html">https://ilacmatik.github.io/kasacik/hesap-silme.html</a></p>
-<p>Hesap silindiğinde tüm bütçe kayıtların ve hesabın kalıcı olarak silinir. Yalnızca deneme süresinin kötüye kullanılmasını önlemek için e-postanın geri çevrilemez özeti ve deneme başlangıç tarihi saklanır; bu kayıttan kimliğin çıkarılamaz. Google Play satın alma kayıtları Google tarafından tutulur.</p>
+<p>Hesap silindiğinde tüm bütçe kayıtların, ortak bütçe davetlerin, kullanım istatistiğin, profil çerçeven, geri bildirim mesajların ve anket oyların ile hesabın kalıcı olarak silinir. Yalnızca kötüye kullanımı önlemek için şunlar saklanır: deneme süresi için e-postanın tek yönlü özeti (SHA-256; e-posta adresinin kendisi tutulmaz) ve deneme başlangıç tarihi; kullandığın hediye kodunun kaydı (yalnızca silinmiş hesabın kimlik numarasıyla). Google Play satın alma kayıtları Google tarafından tutulur.</p>
 <h2>Yatırım uyarısı</h2>
 <p>Uygulamadaki fiyatlar, grafikler ve hesaplamalar bilgilendirme amaçlıdır; yatırım tavsiyesi değildir.</p>
 <h2>İletişim</h2>
