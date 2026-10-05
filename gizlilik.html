@@ -21,7 +21,7 @@ nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}nav a{background:rgba(2
 <ul>
 <li><strong>Uygulamaya girdiğin bütçe bilgileri:</strong> gelir, gider, kart, taksit, kredi, abonelik, borç/alacak, birikim hedefi, bütçe limiti ve yatırım kayıtları; tutarlar, tarihler ve notlar.</li>
 <li><strong>Hesap bilgileri:</strong> Google ile giriş yaparsan adın, e-posta adresin ve Google hesap kimliğin; e-posta ile hesap açarsan e-posta adresin (şifren Firebase tarafından güvenli biçimde saklanır, bize görünmez). Kayıt olmadan devam edersen yalnızca anonim bir kullanıcı kimliği oluşturulur.</li>
-<li><strong>Premium ve deneme süresi:</strong> 30 günlük deneme ve bonus ayın başlangıç tarihleri, e-posta adresinin geri çevrilemez bir özetiyle (SHA-256) saklanır; e-posta adresinin kendisi bu kayıtta tutulmaz. Satın almalar Google Play üzerinden yapılır; ödeme bilgilerin bize ulaşmaz.</li>
+<li><strong>Premium ve deneme süresi:</strong> 30 günlük deneme ve bonus ayın başlangıç tarihleri, e-posta adresinin geri çevrilemez bir özetiyle (SHA-256) saklanır; e-posta adresinin kendisi bu kayıtta tutulmaz. Satın almalar Google Play üzerinden yapılır; ödeme bilgilerin bize ulaşmaz. Satın almanın gerçek olduğunu doğrulamak için Google Play'in verdiği satın alma jetonu sunucumuza (Firebase Cloud Functions) gönderilip Google Play'e sorulur; hesabına yalnızca paket türü ve bitiş tarihi, ayrıca aynı satın almanın başka hesapta kullanılmaması için jetonun geri çevrilemez özeti kaydedilir.</li>
 <li><strong>Hata raporları (isteğe bağlı):</strong> Uygulama çökerse, hatayı düzeltebilmemiz için cihaz modeli, Android sürümü ve hatanın teknik ayrıntıları Firebase Crashlytics'e gönderilir. Bu raporlar tutarlarını veya kayıtlarını içermez. Ayarlar'dan kapatabilirsin.</li>
 <li><strong>Kullanım istatistiği (finansal veri içermez):</strong> Uygulama günde bir kez hesap kimliğine bağlı kısa bir kayıt bırakır: son açılış tarihi, uygulama ve Android sürümü, Premium durumu ve hangi araçları açtığın. Bu kayıt tutar, gelir/gider ya da e-posta içermez; yalnızca uygulamanın yöneticisi toplu sayıları (ör. "30 günde aktif kullanıcı sayısı") görebilir, kimsenin bütçesini göremez.</li>
 <li><strong>Profil çerçevesi:</strong> Premium'da geçirdiğin süreye göre kazandığın çerçeve ve bu sürenin özeti hesabında saklanır; ortak bütçedeki üyeler yalnızca çerçeveni görür, süre ve ödeme bilgisini göremez.</li>
@@ -40,14 +40,6 @@ nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}nav a{background:rgba(2
 <li><strong>Paylaşılan banka mesajı:</strong> Bankanın harcama SMS'ini ya da bildirimini "Paylaş › Kasacık" ile gönderirsen metin yalnızca telefonunda okunur ve saklanmaz; yalnızca onayladığın harcama (tutar, işyeri, tarih) kaydedilir. Uygulama SMS okuma izni istemez.</li>
 <li><strong>Ana ekran widget'ları</strong> bu ayın özetini telefonunda tutar. Telefon yedeklerine ve cihazdan cihaza aktarıma uygulama verisi dahil edilmez.</li>
 <li><strong>Ekstre yükleme:</strong> Seçtiğin ya da Kasacık'la paylaştığın kart ekstresi (PDF, Excel, CSV) yalnızca telefonunda okunur; dosya ve PDF şifresi hiçbir sunucuya gönderilmez, saklanmaz. Yalnızca eklemeyi onayladığın işlemler (ad, tutar, tarih) bütçe kaydı olarak saklanır.</li>
-</ul>
-<h2>Bildirim erişimi (otomatik harcama, isteğe bağlı)</h2>
-<p>"Otomatik harcama" özelliğini açar ve Android'in <em>Bildirim erişimi</em> iznini verirsen Kasacık, telefonuna gelen bildirimlerden yalnızca Türk bankalarının mobil uygulamalarından gelenlere ve (bu seçeneği açık bırakırsan) SMS uygulamandaki, göndereni bir banka olan mesajlara bakar. Bu bildirimlerden yalnızca harcama tutarı, işyeri adı, banka adı ve kartın son 4 hanesi çıkarılır.</p>
-<ul>
-<li>Bildirim metinleri saklanmaz ve hiçbir sunucuya gönderilmez; işlem tamamen telefonunda yapılır.</li>
-<li>Şifre/doğrulama kodu, para girişi ve iade içeren bildirimler okunmadan atlanır. Diğer uygulamaların bildirimlerine ve kişisel mesajlarına bakılmaz.</li>
-<li>Çıkarılan bilgiler "onay bekleyen" olarak yalnızca telefonunda tutulur; sen eklemeyi onaylamadan bütçene kaydedilmez, onaylanmayanlar 7 gün sonra silinir.</li>
-<li>İzni istediğin an uygulamadan ya da telefonun Ayarlar › Bildirim erişimi menüsünden kapatabilirsin.</li>
 </ul>
 <h2>Piyasa verileri</h2>
 <p>Altın, döviz, kripto ve borsa fiyatları, ekonomi haberleri ve enflasyon verisi halka açık kaynaklardan (Harem Altın, Truncgil, CoinGecko, Yahoo Finance, TCMB, open.er-api.com döviz kurları, Forex Factory ekonomik takvimi, haber sitelerinin ve Google Haberler'in RSS akışları) çekilir. Bu isteklerde senin kişisel verin gönderilmez.</p>
