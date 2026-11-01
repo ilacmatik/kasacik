@@ -167,6 +167,8 @@ def tradingview(bist: list) -> dict:
         "NASDAQ:IXIC": "^IXIC",
         "DJ:DJI": "^DJI",
         "TVC:UKOIL": "BZ=F",
+        "ICEEUR:BRN1!": "BZ=F",
+        "NYMEX:BZ1!": "BZ=F",
         "COMEX:GC1!": "GC=F",
         "COMEX:SI1!": "SI=F",
         "NYMEX:PL1!": "PL=F",
@@ -177,7 +179,7 @@ def tradingview(bist: list) -> dict:
         for r in rows:
             key = idx.get(r.get("s"))
             close, chg = (r.get("d") or [None, None])[:2]
-            if key and (v := _row(close, chg)):
+            if key and key not in out and (v := _row(close, chg)):
                 out[key] = v
     except Exception as e:  # noqa: BLE001
         print(f"uyarı: tv global: {e}", file=sys.stderr)
