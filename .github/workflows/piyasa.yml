@@ -1,0 +1,39 @@
+# Kasacık veri sunucusu: borsa fiyatlarını günde birkaç kez piyasa.json'a yazar (GitHub Pages yayınlar).
+# Herkese açık depoda Actions ücretsizdir; APK derleme kotasını etkilemez.
+name: Piyasa verisi
+
+on:
+  schedule:
+    # Saatler UTC (Türkiye = UTC+3). Hafta içi: 10:45, 12:45, 15:15, 18:30 (BIST kapanış sonrası) ve 23:30 (ABD kapanışı)
+    - cron: "45 7 * * 1-5"
+    - cron: "45 9 * * 1-5"
+    - cron: "15 12 * * 1-5"
+    - cron: "30 15 * * 1-5"
+    - cron: "30 20 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: piyasa
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Fiyatları topla
+        run: python3 scripts/piyasa.py
+      - name: Yayınla
+        run: |
+          if git diff --quiet -- piyasa.json 2>/dev/null && git ls-files --error-unmatch piyasa.json >/dev/null 2>&1; then
+            echo "Değişiklik yok."; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add piyasa.json
+          git commit -m "piyasa.json güncellendi" -q
+          git push -q
