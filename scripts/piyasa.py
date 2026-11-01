@@ -7,6 +7,7 @@ Yalnızca Python standart kütüphanesi. GitHub Actions'ta (herkese açık depo 
 
 Çıktı: {"t": <epoch sn>, "q": {"THYAO.IS": [fiyat, önceki_kapanış], "AAPL": [...], "^GSPC": [...]}}
 """
+import http.cookiejar
 import json
 import os
 import sys
@@ -30,27 +31,76 @@ CRWD NET DDOG MDB TEAM INTU ADP BKNG MAR SPY QQQ DIA IWM VOO VTI VT VEA VWO EEM 
 SHY LQD HYG ARKK XLK XLF XLE XLV SMH SOXX SCHD JEPI""".split()
 
 
+_jar = http.cookiejar.CookieJar()
+_opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(_jar))
+_crumb = None
+
+
+def _open(url: str, timeout: int = 20) -> bytes:
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*", "Accept-Language": "en-US,en;q=0.9"})
+    with _opener.open(req, timeout=timeout) as r:
+        return r.read()
+
+
+def session() -> None:
+    """Yahoo oturumu: çerez + crumb (bulut sunucularından çerezsiz istekler 429 alıyor)."""
+    global _crumb
+    for url in ("https://fc.yahoo.com", "https://finance.yahoo.com/quote/AAPL"):
+        try:
+            _open(url)
+        except Exception:  # noqa: BLE001  (404 dönse de çerez gelir)
+            pass
+    for host in ("query2", "query1"):
+        try:
+            c = _open(f"https://{host}.finance.yahoo.com/v1/test/getcrumb").decode().strip()
+            if c and "<" not in c:
+                _crumb = c
+                return
+        except Exception as e:  # noqa: BLE001
+            print(f"uyarı: crumb {host}: {e}", file=sys.stderr)
+
+
 def get(url: str) -> dict:
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        return json.loads(r.read().decode("utf-8"))
+    if _crumb:
+        url += ("&" if "?" in url else "?") + "crumb=" + urllib.parse.quote(_crumb)
+    return json.loads(_open(url).decode("utf-8"))
 
 
 def spark(symbols: list) -> dict:
-    """20'şerli: sembol → [son fiyat, önceki kapanış]."""
+    """Sembol → [son fiyat, önceki kapanış]. Önce toplu "quote" (50'şerli), olmazsa "spark" (20'şerli)."""
+    out = {}
+    for i in range(0, len(symbols), 50):
+        chunk = symbols[i : i + 50]
+        q = ",".join(urllib.parse.quote(s) for s in chunk)
+        data = None
+        for host in ("query2", "query1"):
+            try:
+                data = get(f"https://{host}.finance.yahoo.com/v7/finance/quote?symbols={q}")
+                break
+            except Exception as e:  # noqa: BLE001
+                print(f"uyarı: quote {host} {chunk[0]}…: {e}", file=sys.stderr)
+                time.sleep(3)
+        rows = ((data or {}).get("quoteResponse") or {}).get("result") or []
+        for r in rows:
+            p = r.get("regularMarketPrice")
+            prev = r.get("regularMarketPreviousClose")
+            if isinstance(p, (int, float)) and p > 0:
+                out[r.get("symbol")] = [round(p, 6), round(prev, 6) if isinstance(prev, (int, float)) and prev > 0 else None]
+        if not rows:
+            out.update(_spark(chunk))
+        time.sleep(0.6)
+    return out
+
+
+def _spark(symbols: list) -> dict:
     out = {}
     for i in range(0, len(symbols), 20):
         chunk = symbols[i : i + 20]
         q = ",".join(urllib.parse.quote(s) for s in chunk)
-        for host in ("query2", "query1"):
-            try:
-                data = get(f"https://{host}.finance.yahoo.com/v8/finance/spark?symbols={q}&range=1d&interval=1d")
-                break
-            except Exception as e:  # noqa: BLE001
-                data = None
-                print(f"uyarı: {host} {chunk[0]}…: {e}", file=sys.stderr)
-                time.sleep(2)
-        if not data:
+        try:
+            data = get(f"https://query1.finance.yahoo.com/v8/finance/spark?symbols={q}&range=1d&interval=1d")
+        except Exception as e:  # noqa: BLE001
+            print(f"uyarı: spark {chunk[0]}…: {e}", file=sys.stderr)
             continue
         for s in chunk:
             e = data.get(s) or {}
@@ -60,13 +110,15 @@ def spark(symbols: list) -> dict:
             prev = e.get("chartPreviousClose")
             prev = prev if isinstance(prev, (int, float)) and prev > 0 else None
             out[s] = [round(closes[-1], 6), round(prev, 6) if prev else None]
-        time.sleep(0.4)
+        time.sleep(0.6)
     return out
 
 
 def main() -> int:
     with open(os.path.join(HERE, "bist.json"), encoding="utf-8") as f:
         bist = [c + ".IS" for c in json.load(f)]
+    session()
+    print('crumb:', 'var' if _crumb else 'yok')
     quotes = {}
     quotes.update(spark(INDEX))
     quotes.update(spark(US))
