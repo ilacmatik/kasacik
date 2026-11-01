@@ -114,15 +114,85 @@ def _spark(symbols: list) -> dict:
     return out
 
 
+def tv_scan(market: str, payload: dict) -> list:
+    req = urllib.request.Request(
+        f"https://scanner.tradingview.com/{market}/scan",
+        data=json.dumps(payload).encode(),
+        headers={"User-Agent": UA, "Content-Type": "application/json", "Accept": "application/json"},
+    )
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.loads(r.read().decode("utf-8")).get("data") or []
+
+
+def _row(close, chg):
+    if not isinstance(close, (int, float)) or close <= 0:
+        return None
+    prev = close / (1 + chg / 100) if isinstance(chg, (int, float)) and chg > -100 else None
+    return [round(close, 6), round(prev, 6) if prev else None]
+
+
+def tradingview(bist: list) -> dict:
+    """Tüm BIST hisseleri tek istekte; ABD listesi ve endeksler. Anahtarlar uygulamanın beklediği biçimde."""
+    out = {}
+    want = {c.removesuffix(".IS") for c in bist}
+    try:
+        rows = tv_scan("turkey", {"columns": ["name", "close", "change"], "range": [0, 2000]})
+        for r in rows:
+            name, close, chg = (r.get("d") or [None, None, None])[:3]
+            if name in want and (v := _row(close, chg)):
+                out[name + ".IS"] = v
+    except Exception as e:  # noqa: BLE001
+        print(f"uyarı: tv turkey: {e}", file=sys.stderr)
+    try:
+        tv_names = {u.replace("-", "."): u for u in US}
+        rows = tv_scan(
+            "america",
+            {
+                "filter": [{"left": "name", "operation": "in_range", "right": list(tv_names)}],
+                "columns": ["name", "close", "change"],
+                "range": [0, 1000],
+            },
+        )
+        for r in rows:
+            name, close, chg = (r.get("d") or [None, None, None])[:3]
+            key = tv_names.get(name)
+            if key and key not in out and (v := _row(close, chg)):
+                out[key] = v
+    except Exception as e:  # noqa: BLE001
+        print(f"uyarı: tv america: {e}", file=sys.stderr)
+    idx = {
+        "BIST:XU100": "XU100.IS",
+        "BIST:XU030": "XU030.IS",
+        "SP:SPX": "^GSPC",
+        "NASDAQ:IXIC": "^IXIC",
+        "DJ:DJI": "^DJI",
+        "TVC:UKOIL": "BZ=F",
+        "COMEX:GC1!": "GC=F",
+        "COMEX:SI1!": "SI=F",
+        "NYMEX:PL1!": "PL=F",
+        "NYMEX:PA1!": "PA=F",
+    }
+    try:
+        rows = tv_scan("global", {"symbols": {"tickers": list(idx)}, "columns": ["close", "change"]})
+        for r in rows:
+            key = idx.get(r.get("s"))
+            close, chg = (r.get("d") or [None, None])[:2]
+            if key and (v := _row(close, chg)):
+                out[key] = v
+    except Exception as e:  # noqa: BLE001
+        print(f"uyarı: tv global: {e}", file=sys.stderr)
+    return out
+
+
 def main() -> int:
     with open(os.path.join(HERE, "bist.json"), encoding="utf-8") as f:
         bist = [c + ".IS" for c in json.load(f)]
-    session()
-    print('crumb:', 'var' if _crumb else 'yok')
-    quotes = {}
-    quotes.update(spark(INDEX))
-    quotes.update(spark(US))
-    quotes.update(spark(bist))
+    quotes = tradingview(bist)
+    # Eksik kalanlar için Yahoo (bulut sunucularından çoğu zaman kapalı; yalnızca yedek)
+    missing = [x for x in INDEX + US + bist if x not in quotes]
+    if missing and len(quotes) < 300:
+        session()
+        quotes.update({k: v for k, v in spark(missing).items() if k not in quotes})
     print(f"{len(quotes)} fiyat (BIST {sum(1 for k in quotes if k.endswith('.IS'))})")
     # Kaynak kapalıysa eski dosyayı bozma: çok az fiyat geldiyse yazma
     if len(quotes) < 100:
