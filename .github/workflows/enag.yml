@@ -1,0 +1,53 @@
+# ENAG oranını her ayın 3–6'sı arasında otomatik bulup veri.json'a yazar (uygulama oradan okur).
+# Bulunamazsa ayın 6'sında bir "issue" açar → GitHub e-postayla haber verir.
+name: ENAG verisi
+
+on:
+  schedule:
+    # UTC; Türkiye = UTC+3. ENAG sabah açıklar: 10:30, 13:30, 17:30
+    - cron: "30 7 3-6 * *"
+    - cron: "30 10 3-6 * *"
+    - cron: "30 14 3-6 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: veri-json
+  cancel-in-progress: false
+
+jobs:
+  enag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: ENAG oranını bul
+        id: run
+        run: |
+          set +e
+          python3 scripts/enag.py
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+      - name: Yayınla
+        if: steps.run.outputs.code == '0'
+        run: |
+          if git diff --quiet -- veri.json; then echo "Değişiklik yok."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add veri.json
+          git commit -q -m "veri.json: ENAG otomatik güncellendi"
+          git pull -q --rebase origin main
+          git push -q
+      - name: Bulunamadıysa haber ver (ayın 6'sı son deneme)
+        if: steps.run.outputs.code == '2' && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          day=$(date -u +%d); hour=$(date -u +%H)
+          if [ "$day" = "06" ] && [ "$hour" -ge 14 ]; then
+            gh issue create --repo "$GITHUB_REPOSITORY" \
+              --title "ENAG oranı otomatik bulunamadı ($(date -u +%Y-%m))" \
+              --body "ENAG'ın sitesinden ve haberlerden bu ayın oranı okunamadı. Claude'a \"ENAG ekle\" demen yeterli."
+          fi

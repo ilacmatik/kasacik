@@ -36,4 +36,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add piyasa.json
           git commit -m "piyasa.json güncellendi" -q
+          git pull -q --rebase origin main
           git push -q
