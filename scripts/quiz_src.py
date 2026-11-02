@@ -848,11 +848,72 @@ for i, x in enumerate(Q):
         x["y"] = 1327
         x["t"] = "İlk Akçe"
 
+# ======== Tanışma turu (yarışmayı ilk açan herkese bir kez, "vay be!" soruları) ========
+# dup: aynı bilgi günlük havuzda da varsa; turu oynayan kişiye o soru yerine "spares" listesinden biri gelir.
+INTRO = []
+
+
+def intro(soru, o, a, x, s, h, k, dup=None, y=None, t=None):
+    INTRO.append({"c": "tanisma", "d": 1, "q": soru, "o": o, "a": a, "x": x, "s": s, "h": h, "k": k, "dup": dup, **({"y": y, "t": t} if y else {})})
+
+
+def find(prefix):
+    for i, x in enumerate(Q):
+        if x["q"].startswith(prefix):
+            return f"q{i + 1:03d}"
+    raise SystemExit("bulunamadı: " + prefix)
+
+
+intro("Para ilk olarak nerede icat edildi?", ["Çin", "Mısır", "Anadolu (Lidya)", "Roma"], 2,
+      "Dünyanın ilk madeni paraları MÖ 7. yüzyılda Anadolu'daki Lidya'da basıldı. Yani para bu topraklarda doğdu!",
+      BRIT, "Cevap çok yakında, belki pencereden bakınca görünür 😉", "Paranın memleketi Anadolu, gurur duydum 🥹",
+      dup=find("Bilinen ilk madeni paralar"), y=-630, t="Lidya Sikkesi")
+intro("Her gün kullandığımız \"bedava\" kelimesi aslında ne demek?", ["Hediye", "Havadan, rüzgârdan", "Ucuz", "Kolay"], 1,
+      "Farsça bād-ı hevā yani \"hava, rüzgâr\" sözünden gelir. Bedava, havadan gelen şeydir!",
+      NIS, "Gökyüzüyle ilgili 🌬️", "Havadan gelen tek şey Kesecik'in planları 😄", dup=find("\"Bedava\" kelimesinin"))
+intro("İngilizcede iflas anlamına gelen \"bankrupt\" aslında ne demek?", ["Boş kasa", "Kırık tezgâh", "Kayıp anahtar", "Yanmış defter"], 1,
+      "İtalyan sarraflar parayı bir tezgâhta (banco) bozardı; \"banka\" buradan gelir. Borcunu ödeyemeyenin tezgâhı kırılırdı: banca rotta!",
+      BRIT, "Banka kelimesi bir mobilyadan geliyor 🪑", "Tezgâhımı kırmasınlar, borcum yok! 🙅‍♀️", dup=find("\"Bankrupt\" (iflas)"))
+intro("Yerçekimini keşfeden Isaac Newton yıllarca hangi işi yaptı?", ["Bankacılık", "Darphane yöneticiliği, kalpazan kovalamak", "Kuyumculuk", "Vergi memurluğu"], 1,
+      "Newton 1696'dan ölümüne kadar İngiliz Kraliyet Darphanesi'nde çalıştı, sahte para basanların peşine düştü. Ünlü bilim insanı resmen \"para polisi\" olmuş!",
+      BRIT, "Para ile ilgili ama bir \"polis\" işi 🕵️", "Elma düştü, kalpazan yakalandı 🍎", dup=find("Hangi ünlü bilim insanı yıllarca"))
+intro("İnsanlığın bugüne kadar çıkardığı bütün altını bir araya koysak ne kadar yer kaplar?", ["Bir futbol stadyumunu doldurur", "Yaklaşık 4–5 olimpik yüzme havuzu", "Bir gölü doldurur", "Bir dağ kadar"], 1,
+      "Bugüne kadar çıkarılan altın yaklaşık 215 bin ton. Altın çok yoğun olduğu için bu, yalnızca 11 bin metreküp eder: 4–5 olimpik havuz!",
+      "Dünya Altın Konseyi", "Altın çok ağır, az yer kaplar 🏊", "Bir havuz da benim olsun, içinde yüzerim 💛")
+
+SPARES = []
+
+
+def spare(c, d, soru, o, a, x, s, h, k):
+    SPARES.append({"c": c, "d": d, "q": soru, "o": o, "a": a, "x": x, "s": s, "h": h, "k": k})
+
+
+spare("kelime", 4, "\"Döviz\" kelimesi hangi dilden gelir?", ["Fransızca", "İngilizce", "Arapça", "Rusça"], 0,
+      "Döviz, Fransızca devises kelimesinden gelir; yabancı para anlamında kullanılır.",
+      NIS, "Kur ve fiş ile aynı dilden.", "Kesecik dövizi duyunca hesap makinesine koşuyor 🧮")
+spare("kelime", 2, "\"Hazine\" kelimesinin asıl anlamı nedir?", ["Depo, saklanan yer", "Altın", "Kral", "Gizli harita"], 0,
+      "Hazine, Arapça \"saklamak, depolamak\" kökünden gelir: değerli şeylerin saklandığı yer.",
+      NIS, "Saklamakla ilgili.", "Bizim hazinemiz Kesecik'in yanakları 🐿️")
+spare("kelime", 2, "\"Bono\" kelimesi İtalyancada ne demektir?", ["İyi", "Kâğıt", "Borç", "Banka"], 0,
+      "Bono, İtalyanca buono \"iyi\" kelimesinden gelir; eskiden \"iyidir, ödenecektir\" anlamında senetlere yazılırdı.",
+      NIS, "Bir İtalyan selamında geçer: ... giorno!", "Buon giorno Kesecik, bono'n hazır mı? 😄")
+spare("butce", 4, "Kredi kartı numarasının ilk rakamı genellikle neyi gösterir?", ["Kartın ağını (Visa, Mastercard…)", "Bankanın şehrini", "Kart sahibinin yaşını", "Limiti"], 0,
+      "İlk rakam kart ağını gösterir: 4 Visa, 5 Mastercard, 3 American Express gibi.",
+      BANK, "Kartın logosuyla ilgili.", "Kesecik kart numarasını ezberlemiş, ben şifreyi bile hatırlamıyorum 🙈")
+
+for k, x in enumerate(INTRO):
+    x["id"] = f"i{k + 1}"
+for k, x in enumerate(SPARES):
+    x["id"] = f"s{k + 1}"
+
 out = {
     "version": "2026-11-04",
     "start": "2026-11-03",
     "perDay": 5,
     "questions": Q,
+    "intro": INTRO,
+    "introBonus": "Bu arada \"bütçe\" kelimesi Fransızcada \"küçük kese\" demek. Kesecik de bir bakıma bütçe yani 😌",
+    "spares": SPARES,
 }
 json.dump(out, sys.stdout, ensure_ascii=False, indent=1)
 print(f"{len(Q)} soru", file=sys.stderr)

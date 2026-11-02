@@ -4145,5 +4145,170 @@
    "k": "Kese ile Akçe, tarihten gelen bir aşk hikâyesi 💛",
    "id": "q240"
   }
+ ],
+ "intro": [
+  {
+   "c": "tanisma",
+   "d": 1,
+   "q": "Para ilk olarak nerede icat edildi?",
+   "o": [
+    "Çin",
+    "Mısır",
+    "Anadolu (Lidya)",
+    "Roma"
+   ],
+   "a": 2,
+   "x": "Dünyanın ilk madeni paraları MÖ 7. yüzyılda Anadolu'daki Lidya'da basıldı. Yani para bu topraklarda doğdu!",
+   "s": "Britannica",
+   "h": "Cevap çok yakında, belki pencereden bakınca görünür 😉",
+   "k": "Paranın memleketi Anadolu, gurur duydum 🥹",
+   "dup": "q015",
+   "y": -630,
+   "t": "Lidya Sikkesi",
+   "id": "i1"
+  },
+  {
+   "c": "tanisma",
+   "d": 1,
+   "q": "Her gün kullandığımız \"bedava\" kelimesi aslında ne demek?",
+   "o": [
+    "Hediye",
+    "Havadan, rüzgârdan",
+    "Ucuz",
+    "Kolay"
+   ],
+   "a": 1,
+   "x": "Farsça bād-ı hevā yani \"hava, rüzgâr\" sözünden gelir. Bedava, havadan gelen şeydir!",
+   "s": "Nişanyan Sözlük",
+   "h": "Gökyüzüyle ilgili 🌬️",
+   "k": "Havadan gelen tek şey Kesecik'in planları 😄",
+   "dup": "q123",
+   "id": "i2"
+  },
+  {
+   "c": "tanisma",
+   "d": 1,
+   "q": "İngilizcede iflas anlamına gelen \"bankrupt\" aslında ne demek?",
+   "o": [
+    "Boş kasa",
+    "Kırık tezgâh",
+    "Kayıp anahtar",
+    "Yanmış defter"
+   ],
+   "a": 1,
+   "x": "İtalyan sarraflar parayı bir tezgâhta (banco) bozardı; \"banka\" buradan gelir. Borcunu ödeyemeyenin tezgâhı kırılırdı: banca rotta!",
+   "s": "Britannica",
+   "h": "Banka kelimesi bir mobilyadan geliyor 🪑",
+   "k": "Tezgâhımı kırmasınlar, borcum yok! 🙅‍♀️",
+   "dup": "q007",
+   "id": "i3"
+  },
+  {
+   "c": "tanisma",
+   "d": 1,
+   "q": "Yerçekimini keşfeden Isaac Newton yıllarca hangi işi yaptı?",
+   "o": [
+    "Bankacılık",
+    "Darphane yöneticiliği, kalpazan kovalamak",
+    "Kuyumculuk",
+    "Vergi memurluğu"
+   ],
+   "a": 1,
+   "x": "Newton 1696'dan ölümüne kadar İngiliz Kraliyet Darphanesi'nde çalıştı, sahte para basanların peşine düştü. Ünlü bilim insanı resmen \"para polisi\" olmuş!",
+   "s": "Britannica",
+   "h": "Para ile ilgili ama bir \"polis\" işi 🕵️",
+   "k": "Elma düştü, kalpazan yakalandı 🍎",
+   "dup": "q060",
+   "id": "i4"
+  },
+  {
+   "c": "tanisma",
+   "d": 1,
+   "q": "İnsanlığın bugüne kadar çıkardığı bütün altını bir araya koysak ne kadar yer kaplar?",
+   "o": [
+    "Bir futbol stadyumunu doldurur",
+    "Yaklaşık 4–5 olimpik yüzme havuzu",
+    "Bir gölü doldurur",
+    "Bir dağ kadar"
+   ],
+   "a": 1,
+   "x": "Bugüne kadar çıkarılan altın yaklaşık 215 bin ton. Altın çok yoğun olduğu için bu, yalnızca 11 bin metreküp eder: 4–5 olimpik havuz!",
+   "s": "Dünya Altın Konseyi",
+   "h": "Altın çok ağır, az yer kaplar 🏊",
+   "k": "Bir havuz da benim olsun, içinde yüzerim 💛",
+   "dup": null,
+   "id": "i5"
+  }
+ ],
+ "introBonus": "Bu arada \"bütçe\" kelimesi Fransızcada \"küçük kese\" demek. Kesecik de bir bakıma bütçe yani 😌",
+ "spares": [
+  {
+   "c": "kelime",
+   "d": 4,
+   "q": "\"Döviz\" kelimesi hangi dilden gelir?",
+   "o": [
+    "Fransızca",
+    "İngilizce",
+    "Arapça",
+    "Rusça"
+   ],
+   "a": 0,
+   "x": "Döviz, Fransızca devises kelimesinden gelir; yabancı para anlamında kullanılır.",
+   "s": "Nişanyan Sözlük",
+   "h": "Kur ve fiş ile aynı dilden.",
+   "k": "Kesecik dövizi duyunca hesap makinesine koşuyor 🧮",
+   "id": "s1"
+  },
+  {
+   "c": "kelime",
+   "d": 2,
+   "q": "\"Hazine\" kelimesinin asıl anlamı nedir?",
+   "o": [
+    "Depo, saklanan yer",
+    "Altın",
+    "Kral",
+    "Gizli harita"
+   ],
+   "a": 0,
+   "x": "Hazine, Arapça \"saklamak, depolamak\" kökünden gelir: değerli şeylerin saklandığı yer.",
+   "s": "Nişanyan Sözlük",
+   "h": "Saklamakla ilgili.",
+   "k": "Bizim hazinemiz Kesecik'in yanakları 🐿️",
+   "id": "s2"
+  },
+  {
+   "c": "kelime",
+   "d": 2,
+   "q": "\"Bono\" kelimesi İtalyancada ne demektir?",
+   "o": [
+    "İyi",
+    "Kâğıt",
+    "Borç",
+    "Banka"
+   ],
+   "a": 0,
+   "x": "Bono, İtalyanca buono \"iyi\" kelimesinden gelir; eskiden \"iyidir, ödenecektir\" anlamında senetlere yazılırdı.",
+   "s": "Nişanyan Sözlük",
+   "h": "Bir İtalyan selamında geçer: ... giorno!",
+   "k": "Buon giorno Kesecik, bono'n hazır mı? 😄",
+   "id": "s3"
+  },
+  {
+   "c": "butce",
+   "d": 4,
+   "q": "Kredi kartı numarasının ilk rakamı genellikle neyi gösterir?",
+   "o": [
+    "Kartın ağını (Visa, Mastercard…)",
+    "Bankanın şehrini",
+    "Kart sahibinin yaşını",
+    "Limiti"
+   ],
+   "a": 0,
+   "x": "İlk rakam kart ağını gösterir: 4 Visa, 5 Mastercard, 3 American Express gibi.",
+   "s": "TCMB / Bankacılık terimleri",
+   "h": "Kartın logosuyla ilgili.",
+   "k": "Kesecik kart numarasını ezberlemiş, ben şifreyi bile hatırlamıyorum 🙈",
+   "id": "s4"
+  }
  ]
 }
