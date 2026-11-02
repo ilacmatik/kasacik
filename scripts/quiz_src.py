@@ -34,10 +34,10 @@ q("altin", 2, "Çeyrek altın kaç gramdır?", ["1 gram", "1,75 gram", "2,5 gram
   DAR, "Tam altın 7 gram. Çeyreği kaç eder?", "Düğünde takılınca hepsi ağır gelir ama 😄")
 q("deyim", 3, "\"Kesenin ağzını açmak\" ne demektir?", ["Sır vermek", "Cömertçe harcamaya başlamak", "Borç istemek", "Kavga başlatmak"], 1,
   "Eskiden para, ağzı iple bağlanan keselerde taşınırdı. Keseyi açmak, parayı harcamaya başlamak demekti; bugün cömert davranmak için kullanılır.",
-  TDK, "Kese nedir, içinde ne vardır?", "Abim bu deyimi hiç kullanmaz, kesesini sıkı tutar 🙈")
+  TDK, "Kese nedir, içinde ne vardır?", "Bizimki bu deyimi hiç kullanmaz, kesesi hep sıkı 🙈")
 q("tarih", 4, "Osmanlı'da büyük ödemeler sayılmaz, \"kese\" ile yapılırdı. Bir kese kaç kuruştu?", ["50 kuruş", "100 kuruş", "500 kuruş", "1.000 kuruş"], 2,
   "Büyük tutarlar tek tek sayılmaz, mühürlü keselerle hesaplanırdı: 1 kese = 500 kuruş. Kesecik de adını bu keseden alıyor.",
-  PAK, "Yüzlerce kuruş eder, ama bin değil.", "Abimin adı buradan, bilmeyen kalmasın 😌")
+  PAK, "Yüzlerce kuruş eder, ama bin değil.", "Kesecik'in adı buradan; evde her gün anlatıyor zaten 😌")
 
 # ---- Gün 2
 q("kelime", 1, "\"Banka\" kelimesi aslında neyi anlatıyordu?", ["Kasa", "Tezgâh, sıra", "Kale", "Defter"], 1,
@@ -68,7 +68,7 @@ q("deyim", 2, "\"Ak akçe kara gün içindir\" atasözü ne öğütler?", ["Güm
   TDK, "Kara gün ne demek?", "Benim adım geçiyor, kesin bilge bir söz 😎")
 q("kelime", 3, "\"Borsa\" kelimesi İtalyancada başka ne anlama gelir?", ["Kese, para çantası", "Pazar yeri", "Teraziler", "Liman"], 0,
   "İtalyanca borsa \"kese\" demektir. Belçika'nın Brugge kentinde tüccarların buluştuğu Van der Beurse hanı da borsanın adının kaynağı sayılır.",
-  NIS, "Yine bir para taşıma aracı.", "Kese, borsa, bütçe... abim her yerde 🙄")
+  NIS, "Yine bir para taşıma aracı.", "Kese, borsa, bütçe... Kesecik her yerde, evde de 🙄")
 q("tarih", 4, "Bilinen ilk madeni paralar nerede basıldı?", ["Mısır", "Lidya (Anadolu)", "Roma", "Çin"], 1,
   "MÖ 7. yüzyılda Anadolu'daki Lidya'da, altın-gümüş karışımı elektrumdan ilk madeni paralar basıldı. Yani para bu topraklarda doğdu.",
   BRIT, "Cevap bizim topraklarda, Batı Anadolu'da.", "Paranın memleketi Anadolu, ne güzel 🥰", -630, "Lidya Sikkesi")
@@ -76,7 +76,7 @@ q("tarih", 4, "Bilinen ilk madeni paralar nerede basıldı?", ["Mısır", "Lidya
 # ---- Gün 4
 q("altin", 1, "Saf altın kaç ayardır?", ["14", "18", "22", "24"], 3,
   "Ayar, 24 parça içinde kaç parçanın altın olduğunu gösterir. 24 ayar saf altındır; 22 ayarda 24 parçanın 22'si altındır.",
-  DAR, "En büyük sayı.", "24 ayar ben, abim 22 😌")
+  DAR, "En büyük sayı.", "Ben 24 ayar, Kesecik 22. Şaka şaka, ikimiz de altın gibiyiz 💛")
 q("altin", 2, "Altın fiyatlarında kullanılan \"ons\" kaç gramdır?", ["10 gram", "28,35 gram", "31,10 gram", "50 gram"], 2,
   "Değerli madenlerde kullanılan troy ons 31,1035 gramdır. Mutfaktaki ons (28,35 g) ile karıştırılmamalı!",
   BRIT, "30'dan biraz fazla.", "Mutfak onsu başka, kuyumcu onsu başka. Kafam karıştı 😵")
@@ -127,7 +127,7 @@ q("kelime", 4, "Roma'da para anlamına gelen \"pecunia\" hangi kelimeden türedi
 # ---- Gün 7
 q("deyim", 1, "\"Eli sıkı\" biri nasıldır?", ["Güçlü", "Para harcamayı sevmeyen", "Çalışkan", "Sinirli"], 1,
   "Eli sıkı, parasını kolay kolay harcamayan, tutumlu, bazen de cimri kişi demektir.",
-  TDK, "Eli sıkı olan parayı bırakır mı?", "Abim! Abim tam olarak bu 😂")
+  TDK, "Eli sıkı olan parayı bırakır mı?", "Kesecik! Tam olarak Kesecik 😂")
 q("kelime", 2, "\"Sermaye\" kelimesi Farsçada ne demektir?", ["Baş mal, ana mal", "Hazine", "Altın", "Gelir"], 0,
   "Ser \"baş\", maye \"mal, maya\" demektir. İşin başındaki ana mal: sermaye.",
   NIS, "Her şeyin başındaki maya.", "Benim sermayem bu tatlı gülüşüm 😁")
@@ -147,7 +147,7 @@ q("deyim", 1, "\"Borç yiğidin kamçısıdır\" ne demek?", ["Borç kötüdür"
   TDK, "Kamçı ne işe yarar?", "Bende kamçı yok, sadece kese var 😌")
 q("kelime", 2, "\"Mevduat\" kelimesi ne anlama gelir?", ["Emanet edilenler", "Faizler", "Hesaplar", "Kazançlar"], 0,
   "Arapça vedia \"emanet\" kökünden gelir. Bankaya yatırılan para, bankaya emanet edilen paradır.",
-  NIS, "Bir şeyi birine güvenip bırakmak.", "Paramı abime emanet etmem, yer 😄")
+  NIS, "Bir şeyi birine güvenip bırakmak.", "Paramı Kesecik'e emanet ederim, kuruşu kuruşuna saklar 😌")
 q("altin", 2, "Cumhuriyet altını (ata lira) kaç gramdır?", ["5 gram", "6,5 gram", "7,216 gram", "8 gram"], 2,
   "Cumhuriyet altını 22 ayar ve 7,216 gramdır; tam (ziynet) altından biraz ağırdır.",
   DAR, "Tam altından biraz ağır.", "Küsuratlı ağırlık, kuyumcu işi 🤓")
@@ -187,7 +187,7 @@ q("tarih", 2, "Türkiye Cumhuriyet Merkez Bankası hangi yıl faaliyete başlad�
   TCMB, "1930'ların hemen başı.", "Merkez Bankası da benim kadar ciddi 😤", 1931, "Merkez Bankası")
 q("kelime", 3, "\"Kambiyo\" kelimesi İtalyancada ne demek?", ["Değişim, takas", "Kâr", "Liman", "Kasa"], 0,
   "İtalyanca cambio \"değiştirme\" demektir. Kambiyo, dövizlerin birbirine çevrilmesidir.",
-  NIS, "Döviz bürosunda ne yaparsın?", "Abimle hediyeleri değişiriz, buna kambiyo derim 😄")
+  NIS, "Döviz bürosunda ne yaparsın?", "Kesecik'le hediyeleri değişiriz, buna ev içi kambiyo diyoruz 😄")
 q("altin", 4, "Altının kimyasal simgesi \"Au\" hangi kelimeden gelir?", ["Aurum (Latince)", "Altun", "Aura", "Austria"], 0,
   "Au, Latince aurum kelimesinden gelir; \"parlak şafak\" anlamıyla ilişkilendirilir.",
   BRIT, "Romalıların dili.", "Kimya dersinde altın notu bende 🥇")
@@ -204,7 +204,7 @@ q("dunya", 2, "Euro hangi yıl cebe girdi, yani madeni ve kâğıt olarak kullan
   "Avrupa Merkez Bankası", "2000'lerin hemen başı.", "Yılbaşı hediyesi gibi gelmiş 🎁", 2002, "Euro")
 q("kelime", 3, "\"Temettü\" (hisse kâr payı) kelimesinin anlamı nedir?", ["Faydalanma, yararlanma", "Hediye", "Bölüşme", "Vergi"], 0,
   "Temettü, Arapça \"faydalanma\" demektir. Şirketin kârından ortakların faydalanmasıdır.",
-  NIS, "Bir şeyden yarar görmek.", "Abimin kesesinden temettü alıyorum 😇")
+  NIS, "Bir şeyden yarar görmek.", "Ortak kesemizin temettüsü: Kesecik'in gülümsemesi 😇")
 q("tarih", 4, "Bugünkü Borsa İstanbul'un öncülü sayılan Dersaadet Tahvilat Borsası hangi yıl kuruldu?", ["1866", "1908", "1929", "1985"], 0,
   "Dersaadet Tahvilat Borsası 1866'da İstanbul'da kuruldu. Dersaadet, İstanbul'un eski adlarından biridir.",
   "Borsa İstanbul", "Osmanlı Bankası'ndan üç yıl sonra.", "Borsa da kese demekti, hatırlarsın 😉", 1866, "Dersaadet Tahvilat Borsası")
@@ -215,7 +215,7 @@ q("deyim", 1, "\"Dişinden tırnağından artırmak\" ne demek?", ["Diş fırça
   TDK, "Ne kadar zor bir birikim olabilir?", "Ben tırnaklarıma dokunmam, manikürlü 💅")
 q("kelime", 2, "\"Senet\" kelimesinin kökü ne demektir?", ["Dayanak, güvence", "Kâğıt", "Borç", "İmza"], 0,
   "Senet, Arapça \"dayanak\" demektir. Bir borcun yazılı dayanağıdır.",
-  NIS, "Bir iddiayı destekleyen şey.", "Abimden senet alacağım bundan sonra 📝")
+  NIS, "Bir iddiayı destekleyen şey.", "Kesecik'ten senet alacağım, bana bir dondurma borcu var 📝")
 q("dunya", 2, "Dünyanın ilk kredi kartı sayılan Diners Club kartı hangi yıl çıktı?", ["1920", "1950", "1975", "1990"], 1,
   "1950'de New York'ta, restoranlarda yemek yiyip sonra ödemek için Diners Club kartı çıkarıldı. \"Diners\" yemek yiyenler demek.",
   BRIT, "Adı yemekle ilgili; 20. yüzyılın ortası.", "Yemek yiyip sonra ödemek mi? İlk icadı ben yapmalıydım 🍝", 1950, "İlk Kredi Kartı")
@@ -255,7 +255,7 @@ q("tarih", 2, "Türkiye İş Bankası hangi yıl kuruldu?", ["1920", "1924", "19
   "Türkiye İş Bankası", "Cumhuriyet'in ilk yılları.", "Ağustos sonu doğmuş, aslan burcu 🦁", 1924, "İş Bankası")
 q("kelime", 3, "\"Rehin\" verilen bir şeyin bugünkü karşılığı nedir?", ["Teminat", "Hediye", "Kira", "Satış"], 0,
   "Rehin, bir borca karşılık güvence olarak bırakılan maldır; bugün teminat denir.",
-  TDK, "Borcun güvencesi.", "Abimin gözlüğünü rehin aldım 🤓")
+  TDK, "Borcun güvencesi.", "Kesecik'in gözlüğünü rehin aldım, bulaşıkları yıkayınca geri veririm 🤓")
 q("dunya", 4, "\"Bitcoin Pizza Günü\" neden kutlanır?", ["İlk bitcoin madenciliği", "Bitcoin'le yapılan ilk bilinen alışveriş", "Bitcoin'in yasaklanması", "İlk bitcoin ATM'si"], 1,
   "22 Mayıs 2010'da bir programcı 10.000 bitcoin vererek iki pizza aldı. Bu, bitcoin'le yapılan ilk bilinen alışveriş sayılır.",
   BRIT, "Bir yemek siparişiyle ilgili.", "O pizzalar dünyanın en pahalı pizzası oldu 🍕", 2010, "Pizza Günü")
@@ -331,7 +331,7 @@ q("tarih", 4, "Bugünkü Ziraat Bankası'nın kökeni sayılan \"Memleket Sandı
 # ---- Gün 19
 q("deyim", 1, "\"Parayı veren düdüğü çalar\" ne demek?", ["Masrafı karşılayan söz sahibi olur", "Müzik pahalıdır", "Para kazanan mutludur", "Herkes eşittir"], 0,
   "Bir işin parasını kim veriyorsa, karar verme hakkı da genellikle onda olur.",
-  TDK, "Kim karar verir?", "Düdüğü ben çalarım, parayı abim versin 🎶")
+  TDK, "Kim karar verir?", "Düdüğü ben çalarım, Kesecik notaları sayar 🎶")
 q("kelime", 2, "\"Tasarruf\" kelimesinin asıl anlamı nedir?", ["Bir şeyi kullanma, elinde tutma hakkı", "Biriktirme", "Cimrilik", "Faiz"], 0,
   "Tasarruf, aslında \"bir şeyi dilediği gibi kullanma\" demektir. Bugün ise daha çok biriktirmek, idareli kullanmak anlamında kullanılır.",
   TDK, "Mülkiyetle ilgili bir hak.", "Benim tasarrufum: kurdele koleksiyonu 🎀")
@@ -365,7 +365,7 @@ q("dunya", 4, "Bugün para birimlerinde kullanılan üç harfli kodlarda (TRY, U
 # ---- Gün 21
 q("deyim", 1, "\"Sakla samanı, gelir zamanı\" ne öğütler?", ["Şimdi gereksiz görünen şey ileride işe yarar", "Saman pahalıdır", "Çiftçi ol", "Hiçbir şey saklama"], 0,
   "Bugün değersiz görünen bir şey ileride işine yarayabilir; o yüzden kolayca harcama, sakla.",
-  TDK, "Samanın değeri ne zaman anlaşılır?", "Ben her şeyi saklarım, abim de bana kızar 🙈")
+  TDK, "Samanın değeri ne zaman anlaşılır?", "Ben her şeyi saklarım, Kesecik \"yer kalmadı\" diye söylenir 🙈")
 q("kelime", 2, "\"Fatura\" kelimesi hangi dilden gelir?", ["İtalyanca", "Fransızca", "Arapça", "İngilizce"], 0,
   "Fatura, İtalyanca fattura \"yapılmış iş\" kelimesinden gelir.",
   NIS, "Banka, kasa, poliçe ile aynı memleketten.", "Faturaları görünce kurdelem düşüyor 😩")
@@ -382,7 +382,7 @@ q("tarih", 4, "Bugünkü Borsa İstanbul'un öncülü İMKB (İstanbul Menkul K�
 # ---- Gün 22
 q("deyim", 1, "\"Tutumlu\" kime denir?", ["Parasını ölçülü harcayana", "Çok konuşana", "Herkesi tutana", "Sinirli olana"], 0,
   "Tutumlu, parasını ve eşyasını gereksiz yere harcamayan, idareli kullanan kişidir. Cimrilikten farkı, gereken yerde harcamasıdır.",
-  TDK, "Parayı nasıl kullanır?", "Abim tutumlu, ben biraz daha... rahat 😄")
+  TDK, "Parayı nasıl kullanır?", "Kesecik tutumlu, ben akıllı harcarım. Aradaki fark bütçe defteri 😄")
 q("kelime", 2, "\"Kira\" kelimesi hangi dilden gelir?", ["Arapça", "Farsça", "Yunanca", "Türkçe"], 0,
   "Kira, Arapça \"bir şeyin kullanımı için ödenen bedel\" anlamındaki kelimeden gelir.",
   NIS, "Faiz, mevduat, senet ile aynı dilden.", "Kirayı gördükçe yanaklarım sönüyor 🎈")
@@ -416,10 +416,10 @@ q("dunya", 4, "Japonya'nın para birimi \"yen\" ne anlama gelir?", ["Yuvarlak", 
 # ---- Gün 24
 q("deyim", 1, "\"Para parayı çeker\" ne demek?", ["Birikimi olan daha kolay kazanır", "Mıknatıs gibi", "Para düşer", "Paralar çekişir"], 0,
   "Sermayesi olan kişi onu işletip daha fazla kazanabilir. Küçük de olsa birikim yapmanın önemi buradan gelir.",
-  TDK, "Zenginliğin nasıl büyüdüğünü düşün.", "Kesem parayı çeksin ama abimin kesesini değil 😄")
+  TDK, "Zenginliğin nasıl büyüdüğünü düşün.", "Kesemiz parayı çeksin, Kesecik de beni 😍")
 q("kelime", 2, "\"Ödünç\" kelimesi hangi dilden?", ["Türkçe", "Arapça", "Farsça", "Yunanca"], 0,
   "Ödünç, eski Türkçeden beri kullanılan öz Türkçe bir kelimedir: geri verilmek üzere alınan şey.",
-  TDK, "Vergi gibi öz Türkçe.", "Abimden ödünç aldım, geri vermeyi unuttum 🙊")
+  TDK, "Vergi gibi öz Türkçe.", "Kesecik'ten ödünç kalem aldım, üç yıldır bende 🙊")
 q("dunya", 2, "Bileşik faizde paranın yaklaşık kaç yılda ikiye katlanacağını bulmak için kullanılan pratik kural hangisidir?", ["72 kuralı", "50 kuralı", "100 kuralı", "12 kuralı"], 0,
   "72'yi yıllık getiri oranına bölersin: %12 getiriyle para yaklaşık 72/12 = 6 yılda ikiye katlanır. Enflasyonu da hesaba katmayı unutma!",
   BRIT, "Bir yılın aylarının 6 katı.", "Matematik bana hep 72 gibi geliyor 😵")
