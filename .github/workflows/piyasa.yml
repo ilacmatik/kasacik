@@ -1,15 +1,15 @@
-# Kasacık veri sunucusu: borsa fiyatlarını günde birkaç kez piyasa.json'a yazar (GitHub Pages yayınlar).
+# Kasacık veri sunucusu: borsa fiyatlarını piyasa.json'a yazar (GitHub Pages yayınlar).
 # Herkese açık depoda Actions ücretsizdir; APK derleme kotasını etkilemez.
 name: Piyasa verisi
 
 on:
   schedule:
-    # Saatler UTC (Türkiye = UTC+3). Hafta içi: 10:45, 12:45, 15:15, 18:30 (BIST kapanış sonrası) ve 23:30 (ABD kapanışı)
-    - cron: "45 7 * * 1-5"
-    - cron: "45 9 * * 1-5"
-    - cron: "15 12 * * 1-5"
-    - cron: "30 15 * * 1-5"
-    - cron: "30 20 * * 1-5"
+    # Saatler UTC (Türkiye = UTC+3).
+    # BIST seansı (10:00–18:15): 15 dakikada bir. Fiyatlar uygulamada "15 dk gecikmeli" gösterilir.
+    - cron: "*/15 7-14 * * 1-5"
+    - cron: "0,15 15 * * 1-5"
+    # ABD seansı (16:30–23:00) ve kapanış: saatte bir, son çalışma 23:30
+    - cron: "30 16-20 * * 1-5"
   workflow_dispatch:
 
 permissions:
