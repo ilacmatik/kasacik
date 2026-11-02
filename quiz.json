@@ -1,5 +1,5 @@
 {
- "version": "2026-11-03",
+ "version": "2026-11-04",
  "start": "2026-11-03",
  "perDay": 5,
  "questions": [
@@ -2082,6 +2082,2068 @@
    "h": "Osmanlı'nın başkenti.",
    "k": "Paralar orada doğuyor, ziyarete gidelim 🏛️",
    "id": "q120"
+  },
+  {
+   "c": "deyim",
+   "d": 1,
+   "q": "\"Eli açık\" biri nasıldır?",
+   "o": [
+    "Cömert",
+    "Unutkan",
+    "Hızlı",
+    "Dalgın"
+   ],
+   "a": 0,
+   "x": "Eli açık, parasını paylaşmayı seven, cömert kişi demektir. \"Eli sıkı\"nın tam tersi.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Eli sıkının zıttı.",
+   "k": "Kesecik'in tam tersi, yani ben 😇",
+   "id": "q121"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Hindistan'ın para birimi \"rupi\" Sanskritçede ne demektir?",
+   "o": [
+    "İşlenmiş gümüş",
+    "Fil",
+    "Kral",
+    "Pirinç"
+   ],
+   "a": 0,
+   "x": "Rupi, Sanskritçe rūpya \"işlenmiş, damgalanmış gümüş\" kelimesinden gelir.",
+   "s": "Britannica",
+   "h": "Akçe ile aynı madenden.",
+   "k": "Gümüş her yerde, ben de her yerdeyim ✨",
+   "id": "q122"
+  },
+  {
+   "c": "kelime",
+   "d": 2,
+   "q": "\"Bedava\" kelimesinin Farsça aslı ne anlama gelir?",
+   "o": [
+    "Havadan, rüzgârdan",
+    "Hediye",
+    "Ucuz",
+    "Kolay"
+   ],
+   "a": 0,
+   "x": "Bedava, Farsça bād-ı hevā yani \"hava, rüzgâr\" sözünden gelir. Havadan gelen şey: parasız.",
+   "s": "Nişanyan Sözlük",
+   "h": "Gökyüzüyle ilgili.",
+   "k": "Havadan gelen tek şey Kesecik'in planları 😄",
+   "id": "q123"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "Bütçede sık anılan \"50/30/20 kuralı\" neyi önerir?",
+   "o": [
+    "Gelirin %50 ihtiyaç, %30 istek, %20 birikim",
+    "Yüzde 50 faiz",
+    "50 yaşında emeklilik",
+    "30 gün, 20 taksit"
+   ],
+   "a": 0,
+   "x": "Pratik bir kural: gelirin yarısı zorunlu giderlere, %30'u isteklere, %20'si birikime ve borç kapatmaya. Kendi durumuna göre uyarlanır.",
+   "s": "Finansal okuryazarlık kaynakları",
+   "h": "Üç sayı, toplamı 100.",
+   "k": "Kesecik 20'yi 50 yapmak istiyor, pazarlıktayız 😄",
+   "id": "q124"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Tarihteki ilk büyük finansal \"balon\" sayılan lale çılgınlığı hangi ülkede yaşandı?",
+   "o": [
+    "Hollanda",
+    "Osmanlı",
+    "Fransa",
+    "İngiltere"
+   ],
+   "a": 0,
+   "x": "1630'larda Hollanda'da lale soğanlarının fiyatı inanılmaz yükseldi, 1637'de birden çöktü. Laleler buraya Osmanlı'dan gitmişti.",
+   "s": "Britannica",
+   "h": "Yel değirmenleri ve kanallarıyla ünlü ülke.",
+   "k": "Lale güzel ama soğanına servet verilmez 🌷",
+   "y": 1637,
+   "t": "Lale Çılgınlığı",
+   "id": "q125"
+  },
+  {
+   "c": "deyim",
+   "d": 1,
+   "q": "\"Cebi delik\" ne demektir?",
+   "o": [
+    "Parası hiç durmayan, hep harcayan ya da parasız",
+    "Terzi",
+    "Dikkatli",
+    "Cömert"
+   ],
+   "a": 0,
+   "x": "Cebi delik, parası elinde durmayan ya da hiç parası olmayan kişi için söylenir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Delik cepten para düşer.",
+   "k": "Kesecik'in cebi delik değil, kilitli 🔒",
+   "id": "q126"
+  },
+  {
+   "c": "kelime",
+   "d": 2,
+   "q": "\"Pahalı\" kelimesindeki \"paha\" ne demektir?",
+   "o": [
+    "Değer, fiyat",
+    "Çok",
+    "Altın",
+    "Kıt"
+   ],
+   "a": 0,
+   "x": "Paha, Farsça bahā \"değer, fiyat\" kelimesinden gelir. Pahalı, değeri yüksek olan demektir.",
+   "s": "Nişanyan Sözlük",
+   "h": "Bir şeyin ... biçilir.",
+   "k": "Paha biçilmez olan tek şey: ben 💅",
+   "id": "q127"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Polonya'nın para birimi \"zloty\" ne anlama gelir?",
+   "o": [
+    "Altın, altından",
+    "Kral",
+    "Kartal",
+    "Gümüş"
+   ],
+   "a": 0,
+   "x": "Złoty Lehçede \"altından, altın\" demektir. Hollanda'nın eski parası gulden de \"altın\" anlamına geliyordu.",
+   "s": "Britannica",
+   "h": "Değerli, sarı bir maden.",
+   "k": "Paranın adı altın olunca insan zengin hissediyor 😄",
+   "id": "q128"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "\"Acil durum fonu\" için genellikle kaç aylık gider kadar birikim önerilir?",
+   "o": [
+    "3–6 ay",
+    "1 hafta",
+    "2 yıl",
+    "10 yıl"
+   ],
+   "a": 0,
+   "x": "İş kaybı, hastalık gibi beklenmedik durumlar için 3–6 aylık zorunlu gider kadar kolay ulaşılabilir birikim önerilir.",
+   "s": "Finansal okuryazarlık kaynakları",
+   "h": "Birkaç ay, bir yıldan az.",
+   "k": "Bizim acil durum fonumuz Kesecik'in yanaklarında 🐿️",
+   "id": "q129"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Bugünkü anlamda ilk hisse senedi borsası sayılan borsa hangi şehirde kuruldu?",
+   "o": [
+    "Amsterdam",
+    "Londra",
+    "New York",
+    "Venedik"
+   ],
+   "a": 0,
+   "x": "1602'de Hollanda Doğu Hindistan Şirketi'nin hisseleri Amsterdam'da alınıp satılmaya başladı; bu, ilk modern borsa sayılır.",
+   "s": "Britannica",
+   "h": "Lale çılgınlığının ülkesi.",
+   "k": "Hisse senedi 400 yaşında, ben ondan gençim 😌",
+   "y": 1602,
+   "t": "Amsterdam Borsası",
+   "id": "q130"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Makbuz\" kelimesi ne demektir?",
+   "o": [
+    "Alınmış, teslim alınan",
+    "Gönderilen",
+    "Satılan",
+    "Borç"
+   ],
+   "a": 0,
+   "x": "Makbuz, Arapça \"alınmış\" demektir. Paranın alındığını gösteren belgedir.",
+   "s": "Nişanyan Sözlük",
+   "h": "Parayı ... gösterir.",
+   "k": "Kesecik her şeyin makbuzunu saklar, dondurmanın bile 🍦",
+   "id": "q131"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Rus rublesinin adı hangi fiilden geldiği düşünülür?",
+   "o": [
+    "Kesmek",
+    "Saymak",
+    "Basmak",
+    "Taşımak"
+   ],
+   "a": 0,
+   "x": "Ruble, Rusça \"kesmek\" fiiliyle ilişkilendirilir: gümüş çubuktan kesilen parçalar para olarak kullanılırdı.",
+   "s": "Britannica",
+   "h": "Bir çubuktan parça ayırmak.",
+   "k": "Pastadan pay keser gibi para kesmişler 🍰",
+   "id": "q132"
+  },
+  {
+   "c": "deyim",
+   "d": 2,
+   "q": "\"Ucuz etin yahnisi yavan olur\" ne anlatır?",
+   "o": [
+    "Çok ucuz malın kalitesi de düşük olur",
+    "Et pahalıdır",
+    "Yemek tuzsuzdur",
+    "Az ye"
+   ],
+   "a": 0,
+   "x": "Fiyatı çok düşük olan malın kalitesi de genelde düşüktür; ucuz diye alınan şey hayal kırıklığı yaratabilir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Ucuz her zaman kârlı mı?",
+   "k": "Kesecik her seferinde en ucuzunu alıp bu sözü yaşıyor 😅",
+   "id": "q133"
+  },
+  {
+   "c": "kelime",
+   "d": 3,
+   "q": "\"Portföy\" kelimesi Fransızcada aslında neydi?",
+   "o": [
+    "Evrak çantası",
+    "Hazine",
+    "Defter",
+    "Kasa"
+   ],
+   "a": 0,
+   "x": "Fransızca portefeuille, porter (taşımak) ve feuille (yaprak, kâğıt) kelimelerinden gelir: kâğıt taşınan çanta.",
+   "s": "Nişanyan Sözlük",
+   "h": "İçinde kâğıt taşınır.",
+   "k": "Benim portföyüm kurdele çantam 🎀",
+   "id": "q134"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Bugün hâlâ çalışan en eski merkez bankalarından İngiltere Merkez Bankası hangi yıl kuruldu?",
+   "o": [
+    "1694",
+    "1776",
+    "1815",
+    "1913"
+   ],
+   "a": 0,
+   "x": "Bank of England 1694'te kuruldu. Dünyanın en eski merkez bankası ise İsveç'in Riksbank'ı sayılır (1668).",
+   "s": "Britannica",
+   "h": "17. yüzyılın son yılları.",
+   "k": "Bu banka 330 yaşında, Kesecik'in kumbarası kadar eski 😄",
+   "y": 1694,
+   "t": "İngiltere Merkez Bankası",
+   "id": "q135"
+  },
+  {
+   "c": "butce",
+   "d": 1,
+   "q": "\"Enflasyon\" en kısa nasıl tanımlanır?",
+   "o": [
+    "Fiyatların genel düzeyinin sürekli artması",
+    "Maaşların artması",
+    "Doların düşmesi",
+    "Bankaların batması"
+   ],
+   "a": 0,
+   "x": "Enflasyon, mal ve hizmet fiyatlarının genel düzeyinin sürekli yükselmesidir. Paranın alım gücü azalır.",
+   "s": "TCMB",
+   "h": "Market fişinde hissedilir.",
+   "k": "Enflasyon olunca Kesecik fiyat etiketlerine bakıp iç çekiyor 😮‍💨",
+   "id": "q136"
+  },
+  {
+   "c": "kelime",
+   "d": 2,
+   "q": "\"Havale\" kelimesi ne demektir?",
+   "o": [
+    "Devretme, aktarma",
+    "Hava yolu",
+    "Bekleme",
+    "Bağış"
+   ],
+   "a": 0,
+   "x": "Havale, Arapça \"devretme, aktarma\" demektir. Paranın bir hesaptan diğerine aktarılması.",
+   "s": "Nişanyan Sözlük",
+   "h": "Para bir yerden bir yere gider.",
+   "k": "Kesecik bana hiç havale yapmaz, elden verir 😄",
+   "id": "q137"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Güney Afrika'nın parası \"rand\" adını nereden alır?",
+   "o": [
+    "Altın yataklarıyla ünlü bir sırttan",
+    "Bir kraldan",
+    "Bir hayvandan",
+    "Bir nehirden"
+   ],
+   "a": 0,
+   "x": "Rand, Johannesburg yakınlarındaki ve dünyanın en zengin altın yataklarına sahip Witwatersrand sırtından adını alır.",
+   "s": "Britannica",
+   "h": "Altınla ilgili bir coğrafi yer.",
+   "k": "Altın sırtı! Kesecik oraya taşınmak istiyor ⛏️",
+   "id": "q138"
+  },
+  {
+   "c": "kelime",
+   "d": 3,
+   "q": "\"Kur\" (döviz kuru) kelimesi hangi dilden gelir?",
+   "o": [
+    "Fransızca",
+    "Arapça",
+    "Rusça",
+    "Almanca"
+   ],
+   "a": 0,
+   "x": "Kur, Fransızca cours \"akış, gidiş, geçerli fiyat\" kelimesinden gelir.",
+   "s": "Nişanyan Sözlük",
+   "h": "Bonjour diyenlerin dili.",
+   "k": "Kur her gün değişiyor, Kesecik her gün bakıyor 📈",
+   "id": "q139"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Cumhuriyet'in ilk banknotları hangi yıl kullanılmaya başlandı?",
+   "o": [
+    "1923",
+    "1927",
+    "1938",
+    "1950"
+   ],
+   "a": 1,
+   "x": "Cumhuriyet'in ilk kâğıt paraları 1927'de tedavüle girdi. O yıla kadar Osmanlı banknotları kullanılıyordu.",
+   "s": "TCMB",
+   "h": "Cumhuriyet'in ilanından birkaç yıl sonra.",
+   "k": "İlk Cumhuriyet parası, koleksiyoncuların gözdesi 💵",
+   "y": 1927,
+   "t": "İlk Cumhuriyet Banknotu",
+   "id": "q140"
+  },
+  {
+   "c": "deyim",
+   "d": 1,
+   "q": "\"Kıt kanaat geçinmek\" ne demek?",
+   "o": [
+    "Ancak yetecek kadar parayla yaşamak",
+    "Bol bol harcamak",
+    "Hiç çalışmamak",
+    "Zengin olmak"
+   ],
+   "a": 0,
+   "x": "Geliri ancak zorunlu ihtiyaçlara yetecek kadar olan, dar bütçeyle yaşayan kişi için kullanılır.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Kıt, az demektir.",
+   "k": "Ay sonunda biz de kıt kanaat, ama mutluyuz 💛",
+   "id": "q141"
+  },
+  {
+   "c": "kelime",
+   "d": 2,
+   "q": "\"Şirket\" kelimesi aslında ne demektir?",
+   "o": [
+    "Ortaklık",
+    "Bina",
+    "Patron",
+    "Fabrika"
+   ],
+   "a": 0,
+   "x": "Şirket, Arapça \"ortaklık\" demektir. Birden fazla kişinin bir işte ortak olmasıdır.",
+   "s": "Nişanyan Sözlük",
+   "h": "Birlikte iş yapmak.",
+   "k": "Biz de bir şirketiz: Kese ile Akçe Ltd. 😄",
+   "id": "q142"
+  },
+  {
+   "c": "butce",
+   "d": 2,
+   "q": "Bir yatırımın \"reel getirisi\" nedir?",
+   "o": [
+    "Enflasyondan arındırılmış getiri",
+    "Toplam getiri",
+    "Vergi öncesi getiri",
+    "Aylık getiri"
+   ],
+   "a": 0,
+   "x": "Reel getiri, kazancın enflasyon düşüldükten sonra kalan kısmıdır. %40 kazandın ama enflasyon %35 ise reel getirin yaklaşık %5'tir.",
+   "s": "TCMB",
+   "h": "Enflasyonu hesaba katmak.",
+   "k": "Kesecik reel getiriyi anlatırken gözleri parlıyor 🤓",
+   "id": "q143"
+  },
+  {
+   "c": "kelime",
+   "d": 3,
+   "q": "İngilizcedeki \"company\" (şirket) kelimesi aslında ne anlatır?",
+   "o": [
+    "Ekmeğini paylaşanlar",
+    "Para sayanlar",
+    "Gemi tayfası",
+    "Asker birliği"
+   ],
+   "a": 0,
+   "x": "Latince com- (birlikte) ve panis (ekmek) kökünden gelir: aynı ekmeği paylaşan arkadaşlar. Türkçedeki kumpanya da buradan.",
+   "s": "Britannica",
+   "h": "Sofrayla ilgili.",
+   "k": "Biz de ekmeğimizi paylaşıyoruz, Kesecik büyük parçayı alıyor 🍞",
+   "id": "q144"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "1929 Büyük Buhranı hangi şehrin borsasındaki çöküşle başladı?",
+   "o": [
+    "New York",
+    "Londra",
+    "Paris",
+    "Berlin"
+   ],
+   "a": 0,
+   "x": "Ekim 1929'da New York borsasındaki büyük düşüş, dünyayı etkileyen Büyük Buhran'ın başlangıcı sayılır.",
+   "s": "Britannica",
+   "h": "Wall Street'in şehri.",
+   "k": "Kesecik bu yüzden yumurtaları aynı sepete koymaz 🧺",
+   "y": 1929,
+   "t": "Büyük Buhran",
+   "id": "q145"
+  },
+  {
+   "c": "deyim",
+   "d": 1,
+   "q": "\"Az veren candan, çok veren maldan\" ne anlatır?",
+   "o": [
+    "Az da olsa gönülden verilen değerlidir",
+    "Az ver",
+    "Çok ver",
+    "Hiç verme"
+   ],
+   "a": 0,
+   "x": "Yoksul birinin gönülden verdiği az şey, zengin birinin malından verdiği çok şey kadar değerlidir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Gönülden vermek.",
+   "k": "Kesecik az verir ama candan, kabul 😌",
+   "id": "q146"
+  },
+  {
+   "c": "kelime",
+   "d": 2,
+   "q": "\"Bahşiş\" kelimesi Farsçada ne demektir?",
+   "o": [
+    "Bağış, hediye",
+    "Hizmet",
+    "Garson",
+    "Kahve"
+   ],
+   "a": 0,
+   "x": "Bahşiş, Farsça \"bağışlamak, vermek\" kökünden gelir: gönülden verilen küçük hediye para.",
+   "s": "Nişanyan Sözlük",
+   "h": "Vermekle ilgili.",
+   "k": "Kesecik bahşişi hesap makinesiyle bırakıyor 🧮",
+   "id": "q147"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Kuzey Avrupa'daki \"kron/krona\" paraları ne anlama gelir?",
+   "o": [
+    "Taç",
+    "Kuzey",
+    "Buz",
+    "Balık"
+   ],
+   "a": 0,
+   "x": "Danimarka ve Norveç kronu, İsveç kronası \"taç\" demektir; Latince corona kelimesinden.",
+   "s": "Britannica",
+   "h": "Kralların başında durur.",
+   "k": "Taç bana yakışır 👑",
+   "id": "q148"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "\"Likidite\" ne demektir?",
+   "o": [
+    "Bir varlığın kolayca nakde çevrilebilmesi",
+    "Faiz oranı",
+    "Borç miktarı",
+    "Vergi"
+   ],
+   "a": 0,
+   "x": "Likidite, varlığın hızlıca ve değer kaybetmeden paraya çevrilebilmesidir. Nakit en likit varlıktır; ev ise az likittir.",
+   "s": "TCMB / Bankacılık terimleri",
+   "h": "Sıvı gibi akabilmek.",
+   "k": "Benim en likit varlığım: dondurma parası 🍦",
+   "id": "q149"
+  },
+  {
+   "c": "altin",
+   "d": 4,
+   "q": "Bir litre (1 desimetreküp) saf altın yaklaşık kaç kilogram gelir?",
+   "o": [
+    "Yaklaşık 2 kg",
+    "Yaklaşık 8 kg",
+    "Yaklaşık 19 kg",
+    "Yaklaşık 50 kg"
+   ],
+   "a": 2,
+   "x": "Altının yoğunluğu yaklaşık 19,3 g/cm³'tür; yani bir litrelik altın 19 kilogramdan fazla gelir. Sudan 19 kat ağır!",
+   "s": "Britannica",
+   "h": "Suyun yaklaşık 19 katı.",
+   "k": "Bir şişe altın taşıyamam, Kesecik taşısın 💪",
+   "id": "q150"
+  },
+  {
+   "c": "deyim",
+   "d": 1,
+   "q": "\"Ekmeğini taştan çıkarmak\" ne demek?",
+   "o": [
+    "Zor şartlarda bile geçimini sağlamak",
+    "Fırıncı olmak",
+    "Taş taşımak",
+    "Aç kalmak"
+   ],
+   "a": 0,
+   "x": "Çok zor koşullarda bile çalışıp kazanmayı bilen, becerikli insanlar için söylenir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Taştan ekmek çıkarmak ne kadar zor?",
+   "k": "Kesecik taştan sikke bile çıkarır 🪨",
+   "id": "q151"
+  },
+  {
+   "c": "kelime",
+   "d": 2,
+   "q": "\"Defter\" kelimesinin en eski aslı neydi?",
+   "o": [
+    "İşlenmiş deri",
+    "Kâğıt",
+    "Tahta",
+    "Taş"
+   ],
+   "a": 0,
+   "x": "Defter, Arapça yoluyla Yunanca diphthera \"işlenmiş deri\" kelimesinden gelir. Eskiden deriye yazılırdı.",
+   "s": "Nişanyan Sözlük",
+   "h": "Hayvandan elde edilen bir malzeme.",
+   "k": "Kesecik'in harcama defteri deriden olsa ağır gelirdi 📒",
+   "id": "q152"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Çin'in parası renminbi ne anlama gelir?",
+   "o": [
+    "Halkın parası",
+    "Ejderha parası",
+    "İpek parası",
+    "Altın para"
+   ],
+   "a": 0,
+   "x": "Renminbi \"halkın parası\" demektir; birimine yuan denir.",
+   "s": "Britannica",
+   "h": "Bir ülkenin insanlarıyla ilgili.",
+   "k": "Bizim evde de para halkın, yani ikimizin 😄",
+   "id": "q153"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "Kredi kartında \"hesap kesim tarihi\" nedir?",
+   "o": [
+    "O dönemin harcamalarının ekstreye yazıldığı gün",
+    "Kartın son kullanma tarihi",
+    "Faizin bittiği gün",
+    "Kartın verildiği gün"
+   ],
+   "a": 0,
+   "x": "Kesim tarihinde o dönemin harcamaları toplanır ve ekstre çıkar; son ödeme tarihi genellikle bundan 10 gün sonradır. Kesimden hemen sonra yapılan harcama bir sonraki ekstreye girer.",
+   "s": "TCMB / Bankacılık terimleri",
+   "h": "Ekstre bu günde hazırlanır.",
+   "k": "Kasacık bunu otomatik hesaplıyor, Kesecik çok gururlu 😌",
+   "id": "q154"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Metre ve kilogramın Türkiye'de zorunlu ölçü olmasını sağlayan Ölçüler Kanunu hangi yıl kabul edildi?",
+   "o": [
+    "1923",
+    "1931",
+    "1950",
+    "1965"
+   ],
+   "a": 1,
+   "x": "Ölçüler Kanunu 1931'de kabul edildi; okka, arşın gibi eski ölçülerin yerini metre ve kilogram aldı.",
+   "s": "Resmî Gazete",
+   "h": "Merkez Bankası'nın çalışmaya başladığı yıl.",
+   "k": "Okkalı kahve deyimi o günlerden kaldı ☕",
+   "y": 1931,
+   "t": "Ölçüler Kanunu",
+   "id": "q155"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Ortak\" kelimesi hangi dilden?",
+   "o": [
+    "Türkçe",
+    "Arapça",
+    "Farsça",
+    "Fransızca"
+   ],
+   "a": 0,
+   "x": "Ortak, eski Türkçeden beri kullanılan öz Türkçe bir kelimedir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Vergi ve ödünç gibi.",
+   "k": "Ortak kesemizde benim payım biraz fazla 😇",
+   "id": "q156"
+  },
+  {
+   "c": "altin",
+   "d": 2,
+   "q": "Eski ağırlık birimi \"okka\" yaklaşık kaç gramdı?",
+   "o": [
+    "Yaklaşık 128 g",
+    "Yaklaşık 500 g",
+    "Yaklaşık 1.283 g",
+    "Yaklaşık 3.000 g"
+   ],
+   "a": 2,
+   "x": "Bir okka 400 dirhem, yaklaşık 1.283 gramdı. \"Okkanın altına gitmek\" deyimi de buradan gelir.",
+   "s": "Ş. Pamuk, Osmanlı İmparatorluğu'nun Parasal Tarihi",
+   "h": "Bir kilodan biraz fazla.",
+   "k": "Okkalı bir soru oldu 😄",
+   "id": "q157"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Ekvador 2000 yılından beri hangi parayı resmî para olarak kullanıyor?",
+   "o": [
+    "Euro",
+    "ABD doları",
+    "Peso",
+    "Sol"
+   ],
+   "a": 1,
+   "x": "Ekvador 2000'de kendi parası sucre'yi bırakıp ABD dolarını resmî para olarak kabul etti.",
+   "s": "Britannica",
+   "h": "Kuzey Amerika'nın en ünlü parası.",
+   "k": "Kendi parası yokmuş, Kesecik çok şaşırdı 😮",
+   "id": "q158"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "\"Temerrüt\" ne demektir?",
+   "o": [
+    "Borcu vadesinde ödememe",
+    "Faiz indirimi",
+    "Erken ödeme",
+    "Kredi onayı"
+   ],
+   "a": 0,
+   "x": "Temerrüt, borcun zamanında ödenmemesidir. Gecikme faizi ve kredi notunun düşmesi gibi sonuçları olur.",
+   "s": "TCMB / Bankacılık terimleri",
+   "h": "Gecikmeyle ilgili.",
+   "k": "Kesecik hiç temerrüde düşmez, ödeme gününü takvime üç kez yazar 📅",
+   "id": "q159"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Tarihteki en yüksek enflasyon rekoru hangi ülkede, hangi yılda görüldü?",
+   "o": [
+    "Macaristan, 1946",
+    "Almanya, 1923",
+    "Zimbabve, 2008",
+    "Arjantin, 1989"
+   ],
+   "a": 0,
+   "x": "1946'da Macaristan'da fiyatlar yaklaşık her 15 saatte bir ikiye katlandı; bu, kayıtlara geçen en yüksek enflasyondur.",
+   "s": "Britannica",
+   "h": "İkinci Dünya Savaşı'nın hemen ardından, Orta Avrupa.",
+   "k": "Her 15 saatte iki kat! Kesecik bayıldı 😵",
+   "y": 1946,
+   "t": "Macar Hiperenflasyonu",
+   "id": "q160"
+  },
+  {
+   "c": "deyim",
+   "d": 1,
+   "q": "\"İşten artmaz, dişten artar\" ne anlatır?",
+   "o": [
+    "Birikim, harcamadan kısarak yapılır",
+    "Çok çalış",
+    "Dişlerine dikkat et",
+    "Az ye"
+   ],
+   "a": 0,
+   "x": "Para çoğu zaman daha fazla kazanmaktan değil, harcamadan kısarak birikir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Diş yemekle ilgili.",
+   "k": "Kesecik bu sözü evin duvarına astı 🖼️",
+   "id": "q161"
+  },
+  {
+   "c": "kelime",
+   "d": 2,
+   "q": "\"Emlak\" kelimesi hangi kelimenin çoğuludur?",
+   "o": [
+    "Mülk",
+    "Mal",
+    "Ev",
+    "Arsa"
+   ],
+   "a": 0,
+   "x": "Emlak, Arapça mülk kelimesinin çoğuludur: mülkler, taşınmazlar.",
+   "s": "Nişanyan Sözlük",
+   "h": "Sahip olunan şey.",
+   "k": "Bizim emlakımız: bir ağaç kovuğu 🌳",
+   "id": "q162"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Euro işareti € hangi harften ilham alır?",
+   "o": [
+    "Yunanca epsilon (ε)",
+    "Latin E ve çift çizgi Avrupa'yı",
+    "İkisi de",
+    "Hiçbiri"
+   ],
+   "a": 2,
+   "x": "€ işareti, Avrupa uygarlığının beşiği sayılan Yunancanın epsilon harfinden ve Europe'un E'sinden ilham alır; iki çizgi istikrarı simgeler.",
+   "s": "Avrupa Komisyonu",
+   "h": "Hem eski bir alfabe hem kıtanın adı.",
+   "k": "Kesecik ₺'yi daha güzel buluyor, ben de 💛",
+   "id": "q163"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "\"Yumurtaları aynı sepete koyma\" sözü yatırımda neyi öğütler?",
+   "o": [
+    "Riski çeşitlendirmeyi",
+    "Tavuk yetiştirmeyi",
+    "Nakit tutmayı",
+    "Hiç yatırım yapmamayı"
+   ],
+   "a": 0,
+   "x": "Birikimi tek bir yere değil, farklı varlıklara dağıtmak, birinde kayıp olsa bile hepsini kaybetmemeyi sağlar.",
+   "s": "Finansal okuryazarlık kaynakları",
+   "h": "Sepet düşerse ne olur?",
+   "k": "Ben yumurtaları değil kurdeleleri ayrı sepetlere koyuyorum 🎀",
+   "id": "q164"
+  },
+  {
+   "c": "dunya",
+   "d": 4,
+   "q": "Dünyada birimi en değerli para (1 biriminin en çok dolar ettiği) genellikle hangisidir?",
+   "o": [
+    "Kuveyt dinarı",
+    "İngiliz sterlini",
+    "İsviçre frangı",
+    "Euro"
+   ],
+   "a": 0,
+   "x": "Bir Kuveyt dinarı 3 doların üstünde eder ve uzun süredir birimi en değerli para olarak bilinir.",
+   "s": "Britannica",
+   "h": "Körfez'de küçük bir ülke.",
+   "k": "Birim değerli ama cebimizde yok 😄",
+   "id": "q165"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Fiş\" kelimesi hangi dilden gelir?",
+   "o": [
+    "Fransızca",
+    "İngilizce",
+    "Arapça",
+    "Türkçe"
+   ],
+   "a": 0,
+   "x": "Fiş, Fransızca fiche \"küçük kart, not kâğıdı\" kelimesinden gelir.",
+   "s": "Nişanyan Sözlük",
+   "h": "Kur kelimesiyle aynı dilden.",
+   "k": "Kesecik fişleri tarayıp Kasacık'a ekliyor, aferin 📸",
+   "id": "q166"
+  },
+  {
+   "c": "deyim",
+   "d": 2,
+   "q": "\"Kaz gelecek yerden tavuk esirgenmez\" ne demek?",
+   "o": [
+    "Büyük kazanç için küçük harcamadan kaçınılmaz",
+    "Tavuk ucuzdur",
+    "Kaz pahalıdır",
+    "Hayvan besle"
+   ],
+   "a": 0,
+   "x": "İleride büyük bir kazanç getirecek işte, küçük bir masraftan kaçınmamak gerekir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Kaz tavuktan büyüktür.",
+   "k": "Kesecik tavuğu bile esirger, kazı unutur 😂",
+   "id": "q167"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Kazakistan'ın parası \"tenge\" ile Rusçadaki \"dengi\" (para) kelimesi arasında nasıl bir bağ vardır?",
+   "o": [
+    "İkisi de Türkçe \"teñge\" (gümüş sikke) kökünden",
+    "İkisi de Rusça",
+    "Hiçbir bağ yok",
+    "İkisi de Çince"
+   ],
+   "a": 0,
+   "x": "Rusçadaki para anlamındaki dengi, Türkçe teñge (küçük gümüş sikke) kelimesinden geçmiştir; Kazak tengesi de aynı köktendir.",
+   "s": "Britannica",
+   "h": "Bozkırdan doğuya ve kuzeye yayılan bir kelime.",
+   "k": "Türkçe kelime Rusya'ya kadar gitmiş, gurur duydum 🥹",
+   "id": "q168"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "Bankanın döviz alış ve satış fiyatı arasındaki farka ne denir?",
+   "o": [
+    "Makas (spread)",
+    "Komisyon",
+    "Faiz",
+    "Kur riski"
+   ],
+   "a": 0,
+   "x": "Banka dövizi sattığı fiyattan daha düşüğe alır; aradaki farka makas denir. Sık alıp satmak bu farkı tekrar tekrar ödemek demektir.",
+   "s": "TCMB / Bankacılık terimleri",
+   "h": "Makas açılıp kapanır.",
+   "k": "Kesecik makası görünce döviz almaktan vazgeçti ✂️",
+   "id": "q169"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Dünyada ilk polimer (plastik) banknotu hangi ülke kullanmaya başladı?",
+   "o": [
+    "Avustralya",
+    "Kanada",
+    "Japonya",
+    "İsveç"
+   ],
+   "a": 0,
+   "x": "Avustralya 1988'de ilk polimer banknotu çıkardı. Polimer banknot daha dayanıklı ve sahtesi daha zordur.",
+   "s": "Britannica",
+   "h": "Kangurularıyla ünlü kıta ülkesi.",
+   "k": "Plastik para suya düşse de ıslanmıyor, Kesecik test etti 💦",
+   "y": 1988,
+   "t": "İlk Polimer Banknot",
+   "id": "q170"
+  },
+  {
+   "c": "deyim",
+   "d": 1,
+   "q": "\"Parasını sokakta bulmadı\" ne demek?",
+   "o": [
+    "Emekle kazandı, boşa harcamaz",
+    "Çok şanslı",
+    "Yere bakar",
+    "Kayıp para buldu"
+   ],
+   "a": 0,
+   "x": "Parasını çalışarak, emekle kazanmış ve bu yüzden onu düşünmeden harcamayan biri için söylenir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Para nereden gelmiş?",
+   "k": "Kesecik her harcamada bunu söylüyor 😄",
+   "id": "q171"
+  },
+  {
+   "c": "kelime",
+   "d": 2,
+   "q": "\"Gümrük\" kelimesinin kökü hangi dildedir?",
+   "o": [
+    "Yunanca ve Latince (ticaret)",
+    "Farsça",
+    "Arapça",
+    "Türkçe"
+   ],
+   "a": 0,
+   "x": "Gümrük, Bizans Yunancasındaki kommerkion kelimesinden gelir; o da Latince commercium (ticaret) kökündendir.",
+   "s": "Nişanyan Sözlük",
+   "h": "Ticaret anlamındaki commerce ile akraba.",
+   "k": "Gümrükten kurdele geçirmek zorunda kaldım, sorun çıkmadı 🎀",
+   "id": "q172"
+  },
+  {
+   "c": "altin",
+   "d": 2,
+   "q": "Eski ağırlık ölçüsü \"dirhem\" yaklaşık kaç gramdı?",
+   "o": [
+    "Yaklaşık 3,2 g",
+    "Yaklaşık 32 g",
+    "Yaklaşık 320 g",
+    "Yaklaşık 1 kg"
+   ],
+   "a": 0,
+   "x": "Bir dirhem yaklaşık 3,2 gramdı ve 400 dirhem bir okka ederdi. \"Dirhem dirhem\" az az demektir.",
+   "s": "Ş. Pamuk, Osmanlı İmparatorluğu'nun Parasal Tarihi",
+   "h": "Çok küçük bir ağırlık.",
+   "k": "Kesecik altını dirhem dirhem biriktiriyor 🪙",
+   "id": "q173"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "Bileşik faiz nedir?",
+   "o": [
+    "Faizin de faiz kazanması",
+    "İki bankanın faizi",
+    "Sabit faiz",
+    "Faizsiz kredi"
+   ],
+   "a": 0,
+   "x": "Bileşik faizde kazanılan faiz anaparaya eklenir ve sonraki dönemde o da faiz kazanır. Zaman uzadıkça etkisi büyür.",
+   "s": "TCMB",
+   "h": "Kartopu gibi büyür.",
+   "k": "Kesecik bileşik faizi kartopuyla anlattı, ben de yuvarlandım ⛄",
+   "id": "q174"
+  },
+  {
+   "c": "dunya",
+   "d": 4,
+   "q": "\"Dinar\" para biriminin adı hangi eski paradan gelir?",
+   "o": [
+    "Roma'nın gümüş parası denarius",
+    "Pers darik'i",
+    "Bizans solidus'u",
+    "Mısır deben'i"
+   ],
+   "a": 0,
+   "x": "Dinar, Roma İmparatorluğu'nun gümüş parası denarius'tan türemiştir. Bugün birçok ülkede kullanılır.",
+   "s": "Britannica",
+   "h": "Romalılara uzan.",
+   "k": "Roma'dan bugüne gelmiş, çok dayanıklı bir isim 🏛️",
+   "id": "q175"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Kuyumcu\" kelimesindeki \"kuyum\" hangi fiilden gelir?",
+   "o": [
+    "Kuymak (dökmek)",
+    "Koymak",
+    "Kuyu kazmak",
+    "Kuşanmak"
+   ],
+   "a": 0,
+   "x": "Kuyum, eski Türkçe kuymak yani \"eritip kalıba dökmek\" fiilinden gelir. Kuyumcu, altını eritip işleyen kişidir.",
+   "s": "Nişanyan Sözlük",
+   "h": "Eritilmiş madenle yapılan iş.",
+   "k": "Kuyumcunun önünden Kesecik'i geçirmek zor 💍",
+   "id": "q176"
+  },
+  {
+   "c": "deyim",
+   "d": 2,
+   "q": "\"Bir koyundan iki post çıkmaz\" ne anlatır?",
+   "o": [
+    "Bir işten iki kez kazanç sağlanamaz",
+    "Koyun pahalı",
+    "Kış soğuk",
+    "Post satın al"
+   ],
+   "a": 0,
+   "x": "Bir şeyden ancak bir kez yararlanılabilir; aynı kaynaktan iki kez kazanç beklemek boşunadır.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Bir koyunun kaç postu olur?",
+   "k": "Kesecik yine de deniyor 🐑",
+   "id": "q177"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Panama'nın kendi para birimi balboa'nın yanında hangi para da resmî olarak kullanılır?",
+   "o": [
+    "ABD doları",
+    "Euro",
+    "Meksika pesosu",
+    "Kanada doları"
+   ],
+   "a": 0,
+   "x": "Panama'da balboa ile ABD doları birlikte kullanılır; balboa genelde yalnızca madeni para olarak basılır.",
+   "s": "Britannica",
+   "h": "Ekvador sorusunu hatırla.",
+   "k": "İki parası olan ülke, Kesecik kıskandı 😄",
+   "id": "q178"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "KMH (Kredili Mevduat Hesabı) nedir?",
+   "o": [
+    "Hesapta para yokken bankanın verdiği borç",
+    "Faiz getiren hesap",
+    "Döviz hesabı",
+    "Emeklilik hesabı"
+   ],
+   "a": 0,
+   "x": "KMH, vadesiz hesabın eksiye düşmesine izin veren kısa vadeli kredidir. Faizi genelde yüksektir, uzun süre kullanılmamalıdır.",
+   "s": "TCMB / Bankacılık terimleri",
+   "h": "Hesap eksiye düşer.",
+   "k": "Kesecik KMH'yi duyunca saklanıyor 🙈",
+   "id": "q179"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Tarihin en yüksek değerli banknotlarından \"100 trilyon\" yazan banknot hangi ülkede basıldı?",
+   "o": [
+    "Zimbabve",
+    "Venezuela",
+    "Macaristan",
+    "Almanya"
+   ],
+   "a": 0,
+   "x": "Zimbabve çok yüksek enflasyon döneminde 2008 tarihli, 2009 başında dağıtılan 100 trilyon dolarlık banknotu çıkardı. Bugün koleksiyon parçası.",
+   "s": "Britannica",
+   "h": "Afrika'nın güneyinde bir ülke.",
+   "k": "Trilyoner olmak bu kadar kolay olsa 😅",
+   "y": 2008,
+   "t": "100 Trilyonluk Banknot",
+   "id": "q180"
+  },
+  {
+   "c": "deyim",
+   "d": 1,
+   "q": "\"Avuç açmak\" ne demek?",
+   "o": [
+    "Birinden yardım ya da para istemek",
+    "El sallamak",
+    "Alkışlamak",
+    "Para saymak"
+   ],
+   "a": 0,
+   "x": "Avuç açmak, başkasından yardım ya da para istemek anlamına gelir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Avucu açıp uzatmak.",
+   "k": "Ben avuç açmam, Kesecik'in yanağını sıkarım 😄",
+   "id": "q181"
+  },
+  {
+   "c": "kelime",
+   "d": 2,
+   "q": "\"Tarife\" kelimesi Türkçeye hangi yoldan girdi?",
+   "o": [
+    "Arapçadan İtalyanca üzerinden",
+    "Doğrudan Fransızcadan",
+    "Rusçadan",
+    "Türkçe"
+   ],
+   "a": 0,
+   "x": "Tarife, Arapça \"bildirme\" kökünden İtalyancaya tariffa olarak geçmiş, oradan Türkçeye gelmiştir.",
+   "s": "Nişanyan Sözlük",
+   "h": "İki dilden geçti.",
+   "k": "Elektrik tarifesine bakınca Kesecik ışıkları kapattı 💡",
+   "id": "q182"
+  },
+  {
+   "c": "altin",
+   "d": 2,
+   "q": "Altın ve gümüşe \"değerli maden\" denmesinin başlıca sebebi nedir?",
+   "o": [
+    "Az bulunmaları ve kolay bozulmamaları",
+    "Ağır olmaları",
+    "Parlamaları",
+    "Yumuşak olmaları"
+   ],
+   "a": 0,
+   "x": "Doğada az bulunurlar, paslanmazlar ve kolayca bozulmazlar; bu yüzden binlerce yıldır değer saklamak için kullanılırlar.",
+   "s": "Britannica",
+   "h": "Nadir ve dayanıklı.",
+   "k": "Ben de nadir ve dayanıklıyım, değerli olduğum kesin 💎",
+   "id": "q183"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "Kredi notu (kredi skoru) neyi gösterir?",
+   "o": [
+    "Borçlarını ne kadar düzenli ödediğini",
+    "Maaşını",
+    "Banka sayısını",
+    "Yaşını"
+   ],
+   "a": 0,
+   "x": "Kredi notu, geçmişte borçlarını zamanında ödeyip ödemediğine göre hesaplanır. Yüksek not, daha kolay ve uygun kredi demektir.",
+   "s": "Kredi Kayıt Bürosu",
+   "h": "Ödeme alışkanlıklarına bakar.",
+   "k": "Kesecik'in notu tam puan, benimki de fena değil 😉",
+   "id": "q184"
+  },
+  {
+   "c": "dunya",
+   "d": 4,
+   "q": "Moğolistan'ın para birimi hangisidir?",
+   "o": [
+    "Tögrög (tugrik)",
+    "Som",
+    "Manat",
+    "Tenge"
+   ],
+   "a": 0,
+   "x": "Moğolistan'ın parası tögrögtür; adı Moğolcada \"yuvarlak, daire\" anlamına gelir.",
+   "s": "Britannica",
+   "h": "Adı yuvarlak demek; yen gibi.",
+   "k": "Yine yuvarlak! Paralar hep yuvarlak 🔵",
+   "id": "q185"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Tellal\" kimdir?",
+   "o": [
+    "Çarşıda bağırarak ilan eden, satışta aracılık eden kişi",
+    "Telci",
+    "Postacı",
+    "Bekçi"
+   ],
+   "a": 0,
+   "x": "Tellal, eskiden çarşıda bağırarak duyuru yapan ve açık artırmalarda aracılık eden kişiydi.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Mezat sorusunu hatırla.",
+   "k": "Kesecik indirimleri tellal gibi duyuruyor 📣",
+   "id": "q186"
+  },
+  {
+   "c": "deyim",
+   "d": 2,
+   "q": "\"Mal canın yongasıdır\" ne anlatır?",
+   "o": [
+    "İnsan malına canı kadar değer verir",
+    "Mal ucuzdur",
+    "Ağaç kesme",
+    "Canını sıkma"
+   ],
+   "a": 0,
+   "x": "İnsan emekle kazandığı malı, canının bir parçası gibi görür ve korur.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Yonga, bir bütünden kopan parçadır.",
+   "k": "Kesecik'in canının yongası: kesesi 👜",
+   "id": "q187"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Brezilya'nın para birimi hangisidir?",
+   "o": [
+    "Real",
+    "Peso",
+    "Sol",
+    "Bolívar"
+   ],
+   "a": 0,
+   "x": "Brezilya'nın parası 1994'ten beri real'dir. Real, Portekizce \"kraliyete ait\" anlamına gelir.",
+   "s": "Britannica",
+   "h": "Kraliyetle ilgili bir kelime.",
+   "k": "Real gerçek demek değil miydi? İkisi de 😄",
+   "id": "q188"
+  },
+  {
+   "c": "kelime",
+   "d": 3,
+   "q": "\"Arasta\" ne demektir?",
+   "o": [
+    "Aynı meslekten dükkânların sıralandığı çarşı",
+    "Gemi limanı",
+    "Kervan yolu",
+    "Saray mutfağı"
+   ],
+   "a": 0,
+   "x": "Arasta, genellikle bir caminin ya da büyük bir yapının yanında, aynı işi yapan esnafın dükkânlarının sıralandığı çarşıdır.",
+   "s": "Nişanyan Sözlük",
+   "h": "Bedesten ve çarşı gibi.",
+   "k": "Kurdele arastası olsa ben oradan çıkmam 🎀",
+   "id": "q189"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Ahilikte bir zanaatkârın yükseldiği sıra hangisidir?",
+   "o": [
+    "Çırak → kalfa → usta",
+    "Usta → kalfa → çırak",
+    "Kalfa → çırak → usta",
+    "Çırak → usta → kalfa"
+   ],
+   "a": 0,
+   "x": "Meslek çıraklıkla başlar, kalfalıkla devam eder; ustalığa ise bilgi ve ahlakla yükselinir.",
+   "s": "Kültür ve Turizm Bakanlığı",
+   "h": "En alttan en üste.",
+   "k": "Kesecik tasarruf ustası, ben kalfasıyım 😌",
+   "id": "q190"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Simsar\" kime denir?",
+   "o": [
+    "Alım satımda aracılık edene",
+    "Kuyumcuya",
+    "Bankacıya",
+    "Bekçiye"
+   ],
+   "a": 0,
+   "x": "Simsar, özellikle emlak ve ticarette alıcıyla satıcıyı buluşturup aracılık eden kişidir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Arada duran kişi.",
+   "k": "Kesecik simsara komisyon vermemek için her şeyi kendi arıyor 🔎",
+   "id": "q191"
+  },
+  {
+   "c": "deyim",
+   "d": 2,
+   "q": "\"Çivi çiviyi söker\" sözünün borçla ilgili kullanımı neyi uyarır?",
+   "o": [
+    "Borcu yeni borçla kapatmanın döngüsünü",
+    "Marangozluğu",
+    "Tasarrufu",
+    "Faizi"
+   ],
+   "a": 0,
+   "x": "Bir sorunu benzeriyle çözmek anlamına gelir; borçta ise bir borcu yeni borçla kapatmanın kısır döngüsünü anlatmak için kullanılır.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Bir şeyi aynısıyla çıkarmak.",
+   "k": "Kesecik çiviyi bile söküp saklıyor 🔩",
+   "id": "q192"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Kırgızistan ve Özbekistan'ın para biriminin ortak adı nedir?",
+   "o": [
+    "Som",
+    "Manat",
+    "Tenge",
+    "Lari"
+   ],
+   "a": 0,
+   "x": "İki ülkenin parası da som'dur. Som, Türkçede \"saf, halis\" anlamıyla ilişkilendirilir.",
+   "s": "Britannica",
+   "h": "Kısa, üç harfli bir kelime.",
+   "k": "Som altın gibi, som dostluk gibi 💛",
+   "id": "q193"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "\"Peşin fiyatına taksit\" ne demektir?",
+   "o": [
+    "Taksitle ödense de toplamın peşin fiyatla aynı olması",
+    "Peşin ödeme",
+    "Faizli taksit",
+    "İndirim"
+   ],
+   "a": 0,
+   "x": "Ürünün toplam fiyatı peşin fiyatla aynı kalır, sadece ödeme aylara bölünür. Yine de toplam borcu ve aylık bütçeyi hesaba katmak gerekir.",
+   "s": "TCMB / Bankacılık terimleri",
+   "h": "Toplam değişiyor mu?",
+   "k": "Kesecik yine de peşin almayı seçiyor, alışkanlık 😄",
+   "id": "q194"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Osmanlı'da \"Galata bankerleri\" en çok hangi işi yapardı?",
+   "o": [
+    "Devlete ve tüccara borç para verirdi",
+    "Gemi yapardı",
+    "Kale korurdu",
+    "Kumaş dokurdu"
+   ],
+   "a": 0,
+   "x": "Galata'daki bankerler 19. yüzyılda devlete ve tüccarlara kredi verir, para işlerine aracılık ederdi; modern bankalardan önceki finans dünyasıydı.",
+   "s": "Ş. Pamuk, Osmanlı İmparatorluğu'nun Parasal Tarihi",
+   "h": "Bugünkü bankaların işini yapanlar.",
+   "k": "Galata'da bir kafede Kesecik'le bunu konuştuk ☕",
+   "id": "q195"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Ticaret\" kelimesi hangi dilden gelir?",
+   "o": [
+    "Arapça",
+    "Farsça",
+    "Yunanca",
+    "Türkçe"
+   ],
+   "a": 0,
+   "x": "Ticaret, Arapça kökenlidir ve alım satım işi demektir. Tüccar da aynı köktendir.",
+   "s": "Nişanyan Sözlük",
+   "h": "Tüccar sorusunu hatırla.",
+   "k": "Ticarette Kesecik pazarlık, ben gülümseme kısmındayım 😁",
+   "id": "q196"
+  },
+  {
+   "c": "deyim",
+   "d": 2,
+   "q": "\"Gözü doymamak\" ne demektir?",
+   "o": [
+    "Ne kadar şeyi olsa da daha fazlasını istemek",
+    "Acıkmak",
+    "Uykusuz kalmak",
+    "Kör olmak"
+   ],
+   "a": 0,
+   "x": "Sahip olduğuyla yetinmeyip hep daha fazlasını isteyen kişi için söylenir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Doymak karnın işi ama göz?",
+   "k": "Benim gözüm sadece kurdelelere doymuyor 🎀",
+   "id": "q197"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Satoshi neyin en küçük birimidir?",
+   "o": [
+    "Bitcoin",
+    "Japon yeni",
+    "Euro",
+    "Altın"
+   ],
+   "a": 0,
+   "x": "Bir bitcoin 100 milyon satoshi'ye bölünür; adını bitcoin'i tasarlayan takma adlı kişiden alır.",
+   "s": "Britannica",
+   "h": "Pizza Günü sorusunu hatırla.",
+   "k": "Kesecik satoshi satoshi biriktiriyor 😄",
+   "id": "q198"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "\"Deflasyon\" nedir?",
+   "o": [
+    "Fiyatların genel düzeyinin sürekli düşmesi",
+    "Fiyat artışı",
+    "Vergi artışı",
+    "Faiz artışı"
+   ],
+   "a": 0,
+   "x": "Deflasyon, fiyatların genel olarak düşmesidir. Kulağa iyi gelse de ekonomide durgunluğa yol açabileceği için istenmez.",
+   "s": "TCMB",
+   "h": "Enflasyonun tersi.",
+   "k": "Fiyatlar düşerse Kesecik bayram eder ama ekonomistler etmez 🤔",
+   "id": "q199"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "IBAN'ın Türkiye'de kullanılan hâli kaç karakterdir?",
+   "o": [
+    "16",
+    "20",
+    "26",
+    "34"
+   ],
+   "a": 2,
+   "x": "Türkiye'deki IBAN'lar TR ile başlar ve toplam 26 karakterdir. Uluslararası standart bir hesap numarasıdır.",
+   "s": "TCMB / Bankacılık terimleri",
+   "h": "20'den fazla, 30'dan az.",
+   "k": "Kesecik IBAN'ımı ezbere biliyor, romantik 💌",
+   "id": "q200"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Endeks\" kelimesinin Latince aslı ne demektir?",
+   "o": [
+    "Gösteren, işaret eden",
+    "Sayı",
+    "Fiyat",
+    "Liste"
+   ],
+   "a": 0,
+   "x": "Latince index \"gösteren\" demektir; işaret parmağına da index denir. Endeks, bir değişimi gösteren sayıdır.",
+   "s": "Britannica",
+   "h": "Hangi parmağın adı?",
+   "k": "İşaret parmağımla Kesecik'e harcamaları gösteriyorum ☝️",
+   "id": "q201"
+  },
+  {
+   "c": "deyim",
+   "d": 2,
+   "q": "\"Alın teri\" ne anlatır?",
+   "o": [
+    "Emekle, çalışarak kazanılan",
+    "Sıcak hava",
+    "Yorgunluk",
+    "Spor"
+   ],
+   "a": 0,
+   "x": "Alın teriyle kazanmak, çalışarak ve emek vererek kazanmaktır. En değerli kazanç sayılır.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Çalışınca alında ne birikir?",
+   "k": "Kesecik'in alın teri sikke şeklinde 😄",
+   "id": "q202"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Meksika ve birçok Latin Amerika ülkesinin parası \"peso\" ne anlama gelir?",
+   "o": [
+    "Ağırlık",
+    "Kral",
+    "Gümüş",
+    "Güneş"
+   ],
+   "a": 0,
+   "x": "Peso, İspanyolcada \"ağırlık\" demektir; değeri ağırlıkla ölçülen gümüş paralardan gelir. Pound gibi!",
+   "s": "Britannica",
+   "h": "Sterlin sorusunu hatırla.",
+   "k": "Paralar hep ağırlıkla başlamış, ilginç 🏋️‍♀️",
+   "id": "q203"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "Mevduat sigortası ne işe yarar?",
+   "o": [
+    "Banka zor duruma düşerse mevduatın belli bir tutarını güvenceye alır",
+    "Evi sigortalar",
+    "Faizi artırır",
+    "Vergiyi düşürür"
+   ],
+   "a": 0,
+   "x": "Türkiye'de TMSF, bankada tutulan mevduatı belli bir tutara kadar güvence altına alır. Bu tutar zaman zaman güncellenir.",
+   "s": "TMSF",
+   "h": "Bankadaki para için güvence.",
+   "k": "Kesecik yine de bir kısmını yastık altında tutuyor 😴",
+   "id": "q204"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Osmanlı'da 1840'lardan sonra kullanılan ve Cumhuriyet'e kadar süren altın paranın genel adı neydi?",
+   "o": [
+    "Osmanlı lirası",
+    "Akçe",
+    "Sultani",
+    "Kuruş"
+   ],
+   "a": 0,
+   "x": "1844 reformuyla 100 kuruş değerinde altın Osmanlı lirası basıldı; halk arasında padişaha göre Mecidiye, Reşat gibi adlarla anıldı.",
+   "s": "Ş. Pamuk, Osmanlı İmparatorluğu'nun Parasal Tarihi",
+   "h": "Bugünkü paramızın adına benziyor.",
+   "k": "Lira o zamandan beri bizimle 💛",
+   "id": "q205"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Mal\" kelimesi hangi dilden?",
+   "o": [
+    "Arapça",
+    "Türkçe",
+    "Farsça",
+    "Rumca"
+   ],
+   "a": 0,
+   "x": "Mal, Arapça kökenlidir ve sahip olunan şey, servet demektir.",
+   "s": "Nişanyan Sözlük",
+   "h": "Emlak ve mülk ile aynı dilden.",
+   "k": "Kesecik'in en değerli malı: ben 😇",
+   "id": "q206"
+  },
+  {
+   "c": "deyim",
+   "d": 2,
+   "q": "\"Ağzıyla kuş tutsa\" ne anlatır?",
+   "o": [
+    "Ne yaparsa yapsın beğendirememek",
+    "Çok hızlı olmak",
+    "Avcılık",
+    "Şarkı söylemek"
+   ],
+   "a": 0,
+   "x": "Çok zor bir şeyi bile başarsa yine yaranamamak, beğendirememek anlamına gelir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "İmkânsız bir başarı bile yetmez.",
+   "k": "Kesecik'e indirim bulsam ağzımla kuş tutsam yine \"daha ucuzu vardı\" der 😂",
+   "id": "q207"
+  },
+  {
+   "c": "altin",
+   "d": 2,
+   "q": "Altın en çok hangi amaçla talep görür?",
+   "o": [
+    "Mücevher ve takı",
+    "Elektronik",
+    "Diş hekimliği",
+    "Boya"
+   ],
+   "a": 0,
+   "x": "Dünyadaki altın talebinin en büyük bölümü mücevher ve takıdır; onu yatırım ve merkez bankası alımları izler.",
+   "s": "Dünya Altın Konseyi",
+   "h": "Düğünlerde takılan.",
+   "k": "Takı sevmeyen sincap yoktur 💍",
+   "id": "q208"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "\"Stagflasyon\" neyi anlatır?",
+   "o": [
+    "Ekonomik durgunluk ile yüksek enflasyonun birlikte görülmesini",
+    "Hızlı büyümeyi",
+    "Fiyatların düşmesini",
+    "Vergi indirimini"
+   ],
+   "a": 0,
+   "x": "Stagflasyon, ekonominin büyümediği (durgunluk) ama fiyatların artmaya devam ettiği zor bir durumdur.",
+   "s": "TCMB",
+   "h": "İki zor durum bir arada.",
+   "k": "Kelimesi bile zor, Kesecik üç kez okudu 😵‍💫",
+   "id": "q209"
+  },
+  {
+   "c": "dunya",
+   "d": 4,
+   "q": "Karadağ ve Kosova, Avrupa Birliği üyesi olmadıkları hâlde hangi parayı kullanır?",
+   "o": [
+    "Euro",
+    "Dinar",
+    "Lev",
+    "Frank"
+   ],
+   "a": 0,
+   "x": "Karadağ ve Kosova, AB üyesi olmadan euroyu tek taraflı olarak kullanır.",
+   "s": "Avrupa Merkez Bankası",
+   "h": "Avrupa'nın ortak parası.",
+   "k": "Üye olmadan kullanmak, Kesecik'in bayıldığı türden bir tasarruf 😄",
+   "id": "q210"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Kalem\" kelimesinin Yunanca aslı neydi?",
+   "o": [
+    "Kamış",
+    "Tüy",
+    "Mürekkep",
+    "Yazı"
+   ],
+   "a": 0,
+   "x": "Kalem, Yunanca kalamos \"kamış\" kelimesinden gelir; eskiden kamıştan yapılırdı.",
+   "s": "Nişanyan Sözlük",
+   "h": "Göl kenarında büyüyen bir bitki.",
+   "k": "Hesap kalemleri de buradan geliyor, Kesecik hepsini yazıyor ✏️",
+   "id": "q211"
+  },
+  {
+   "c": "deyim",
+   "d": 2,
+   "q": "\"Ateş pahası\" ne demektir?",
+   "o": [
+    "Çok pahalı",
+    "Sıcak",
+    "Yangın",
+    "Ucuz"
+   ],
+   "a": 0,
+   "x": "Ateş pahası, fiyatı çok yüksek, el yakan şey demektir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Ateş eli yakar.",
+   "k": "Kesecik ateş pahası etiketleri görünce yanaklarını şişiriyor 🔥",
+   "id": "q212"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Azerbaycan ve Türkmenistan'ın para birimi hangisidir?",
+   "o": [
+    "Manat",
+    "Som",
+    "Tenge",
+    "Lira"
+   ],
+   "a": 0,
+   "x": "Azerbaycan ve Türkmenistan'ın parasının adı manattır.",
+   "s": "Britannica",
+   "h": "M ile başlar.",
+   "k": "Kardeş ülkelerin parası, adı da ortak 🤝",
+   "id": "q213"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "Vadeli mevduat süresi dolmadan bozulursa genellikle ne olur?",
+   "o": [
+    "Faiz kazancının tamamı ya da bir kısmı kaybedilir",
+    "Faiz ikiye katlanır",
+    "Hiçbir şey olmaz",
+    "Banka ceza olarak anaparayı alır"
+   ],
+   "a": 0,
+   "x": "Vade dolmadan para çekilirse çoğu bankada o dönemin faizi kısmen ya da tamamen yanar; anapara korunur. Koşullar bankaya göre değişir.",
+   "s": "TCMB / Bankacılık terimleri",
+   "h": "Sözünü erken bozmanın bir bedeli olur.",
+   "k": "Kesecik vadeyi beklemek için takvime kalp çizdi 💘",
+   "id": "q214"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Avrupa'da ticarette kullanılan çift kayıtlı defter tutmayı ilk kez kitapta anlatan İtalyan matematikçi kimdir?",
+   "o": [
+    "Luca Pacioli",
+    "Fibonacci",
+    "Galileo",
+    "Leonardo da Vinci"
+   ],
+   "a": 0,
+   "x": "Luca Pacioli 1494'te yazdığı kitapta çift kayıtlı muhasebeyi anlattı; bu yüzden muhasebenin babası sayılır. Leonardo da Vinci'nin arkadaşıydı.",
+   "s": "Britannica",
+   "h": "Leonardo da Vinci'nin matematik hocası ve arkadaşı.",
+   "k": "Muhasebenin babası, Kesecik'in idolü 🤓",
+   "y": 1494,
+   "t": "Çift Kayıtlı Muhasebe",
+   "id": "q215"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Kumpanya\" kelimesi bugün hangi kelimenin eş anlamlısıdır?",
+   "o": [
+    "Şirket, topluluk",
+    "Kumbara",
+    "Gemi",
+    "Tiyatro bileti"
+   ],
+   "a": 0,
+   "x": "Kumpanya, İtalyanca compagnia kelimesinden gelir ve şirket, topluluk anlamındadır.",
+   "s": "Nişanyan Sözlük",
+   "h": "Company sorusunu hatırla.",
+   "k": "Kese ile Akçe kumpanyası, en tatlı şirket 😄",
+   "id": "q216"
+  },
+  {
+   "c": "deyim",
+   "d": 2,
+   "q": "\"Paranın yüzü sıcaktır\" ne demek?",
+   "o": [
+    "Para insana çekici gelir, kolayca vazgeçilmez",
+    "Para yanar",
+    "Bozuk para",
+    "Yazın para"
+   ],
+   "a": 0,
+   "x": "Para insana sıcak, çekici gelir; ondan vazgeçmek zordur.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Para karşısında insan nasıl hisseder?",
+   "k": "Kesecik parayı görünce eriyor 🫠",
+   "id": "q217"
+  },
+  {
+   "c": "altin",
+   "d": 2,
+   "q": "\"Has altın\" ne demektir?",
+   "o": [
+    "Saf altın",
+    "Sahte altın",
+    "Eski altın",
+    "Gümüş karışımı"
+   ],
+   "a": 0,
+   "x": "Has altın, katkısız ya da çok yüksek saflıktaki altın demektir; 24 ayara yakın altınlar için kullanılır.",
+   "s": "Darphane",
+   "h": "Has, halis demek.",
+   "k": "Has altın gibi bir eşim var, Kesecik söyledi 💛",
+   "id": "q218"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "\"Ödeme gücünü aşan taksit\" neden risklidir?",
+   "o": [
+    "Gelecek ayların gelirini önceden harcar",
+    "Faizi düşürür",
+    "Kredi notunu artırır",
+    "Vergiyi azaltır"
+   ],
+   "a": 0,
+   "x": "Taksit, gelecekteki gelirden bugün harcamaktır. Toplam taksitler gelirin önemli bir kısmını geçerse beklenmedik bir giderde bütçe sıkışır.",
+   "s": "Finansal okuryazarlık kaynakları",
+   "h": "Gelecek aylara ne olur?",
+   "k": "Kasacık'taki Taksit sekmesi tam bu yüzden var 📊",
+   "id": "q219"
+  },
+  {
+   "c": "dunya",
+   "d": 4,
+   "q": "İsviçre frangının banknotları hangi özelliğiyle ünlüdür?",
+   "o": [
+    "Dikey (dik) tasarımıyla",
+    "Yuvarlak şekliyle",
+    "Kokusuyla",
+    "Altın tozuyla"
+   ],
+   "a": 0,
+   "x": "İsviçre frangı banknotları dikey tasarlanmıştır; dünyada az sayıda banknot böyledir.",
+   "s": "İsviçre Ulusal Bankası",
+   "h": "Cüzdana dik konur.",
+   "k": "Dik para! Kesecik onu da yan yatırmadan saklıyor 😄",
+   "id": "q220"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Mühür\" kelimesi hangi dilden gelir?",
+   "o": [
+    "Farsça",
+    "Arapça",
+    "Türkçe",
+    "Yunanca"
+   ],
+   "a": 0,
+   "x": "Mühür, Farsça kökenlidir. Eskiden imza yerine mühür kullanılır, keseler de mühürlenirdi.",
+   "s": "Nişanyan Sözlük",
+   "h": "Peşin ve sermaye ile aynı dilden.",
+   "k": "Kesecik'in kesesi hâlâ mühürlü, şifresini bana da vermiyor 🔏",
+   "id": "q221"
+  },
+  {
+   "c": "deyim",
+   "d": 2,
+   "q": "\"Hesabını kitabını bilmek\" ne anlatır?",
+   "o": [
+    "Harcamalarını ölçülü ve düşünerek yapmak",
+    "Matematik öğretmeni olmak",
+    "Kitap okumak",
+    "Borç yazmak"
+   ],
+   "a": 0,
+   "x": "Hesabını kitabını bilen kişi, harcamasını gelirine göre ayarlar, düşünerek davranır.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Bütçe yapan biri.",
+   "k": "Kasacık kullananlar hesabını kitabını bilir 😌",
+   "id": "q222"
+  },
+  {
+   "c": "dunya",
+   "d": 2,
+   "q": "Japon yeninin simgesi hangisidir?",
+   "o": [
+    "¥",
+    "€",
+    "£",
+    "₩"
+   ],
+   "a": 0,
+   "x": "Yen'in simgesi ¥'dir; Çin yuanı da aynı simgeyi kullanır. ₩ Kore wonu, £ sterlin, € euro simgesidir.",
+   "s": "Britannica",
+   "h": "Y harfine benzer.",
+   "k": "Simgelerin hepsini ezberledim, Kesecik'e anlattım 🤓",
+   "id": "q223"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "Bütçede \"ihtiyaç\" ile \"istek\" arasındaki fark nedir?",
+   "o": [
+    "İhtiyaç yaşamak için gerekli olan, istek olmasa da yaşanabilen",
+    "İkisi aynıdır",
+    "İstek daha önemlidir",
+    "İhtiyaç pahalı olandır"
+   ],
+   "a": 0,
+   "x": "Kira, gıda, fatura ihtiyaçtır; yeni telefon, tatil isteklerdir. Önce ihtiyaçlar, sonra birikim, sonra istekler planlanır.",
+   "s": "Finansal okuryazarlık kaynakları",
+   "h": "Hangisi olmadan yaşanamaz?",
+   "k": "Kurdele ihtiyaç mı istek mi? Tartışmaya açık 🎀",
+   "id": "q224"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Avrupa'da senet ve çek gibi kâğıtların yaygınlaşmasında öncü olan, 13–15. yüzyıllarda öne çıkan İtalyan banker aileleri hangi şehirdendi?",
+   "o": [
+    "Floransa",
+    "Napoli",
+    "Milano",
+    "Roma"
+   ],
+   "a": 0,
+   "x": "Floransa'daki Medici gibi banker aileleri şubeler açıp senetle para transferini yaygınlaştırdı. Floransa'nın altın parası florin de çok tanınırdı.",
+   "s": "Britannica",
+   "h": "Rönesans'ın beşiği şehir.",
+   "k": "Floransa'ya balayına gidelim mi Kesecik? 🥰",
+   "id": "q225"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Hesap\" kelimesi hangi dilden?",
+   "o": [
+    "Arapça",
+    "Türkçe",
+    "Farsça",
+    "Latince"
+   ],
+   "a": 0,
+   "x": "Hesap, Arapça \"saymak\" kökünden gelir.",
+   "s": "Nişanyan Sözlük",
+   "h": "Saymakla ilgili.",
+   "k": "Kesecik hesap yapmayı aşk sanıyor 😄",
+   "id": "q226"
+  },
+  {
+   "c": "deyim",
+   "d": 2,
+   "q": "\"Para kazanmak\" yerine kullanılan \"ekmek parası\" ne anlatır?",
+   "o": [
+    "Geçimi sağlayacak kadar kazanç",
+    "Fırına borç",
+    "Bahşiş",
+    "Harçlık"
+   ],
+   "a": 0,
+   "x": "Ekmek parası, temel ihtiyaçları karşılayacak kadar kazanç demektir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "En temel ihtiyaç.",
+   "k": "Ekmek parası bizde, çikolata parası Kesecik'te 🍫",
+   "id": "q227"
+  },
+  {
+   "c": "altin",
+   "d": 2,
+   "q": "Gram altın fiyatı genel olarak neye bakılarak hesaplanır?",
+   "o": [
+    "Ons altının dolar fiyatı ve dolar kuru",
+    "Kuyumcunun keyfi",
+    "Hava durumu",
+    "Gümüş fiyatı"
+   ],
+   "a": 0,
+   "x": "Gram altın yaklaşık olarak: ons fiyatı × dolar kuru ÷ 31,1 formülüyle bulunur. Kasacık da gram altını böyle hesaplar.",
+   "s": "Darphane",
+   "h": "Ons sorusunu ve doları hatırla.",
+   "k": "Formülü Kesecik'ten öğrendim, artık ben anlatıyorum 😎",
+   "id": "q228"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "Kredi kartında yalnızca asgari tutarı ödemek neden pahalıya patlar?",
+   "o": [
+    "Kalan borca faiz işler ve borç uzun süre kapanmaz",
+    "Kart iptal olur",
+    "Puan kazanılmaz",
+    "Limit artar"
+   ],
+   "a": 0,
+   "x": "Asgari ödeme borcun yalnızca bir kısmıdır; kalanına faiz işler. Sürekli asgari ödenirse borç yıllarca sürebilir.",
+   "s": "TCMB / Bankacılık terimleri",
+   "h": "Kalan borca ne olur?",
+   "k": "Kasacık'taki Borç kapatma aracına bir bakın, Kesecik gözyaşı döktü 😢",
+   "id": "q229"
+  },
+  {
+   "c": "dunya",
+   "d": 4,
+   "q": "Dünyanın en eski merkez bankası sayılan Riksbank hangi ülkenindir?",
+   "o": [
+    "İsveç",
+    "Norveç",
+    "Danimarka",
+    "Hollanda"
+   ],
+   "a": 0,
+   "x": "İsveç Merkez Bankası Riksbank 1668'de kuruldu ve bugün hâlâ çalışan en eski merkez bankası sayılır.",
+   "s": "Britannica",
+   "h": "Krona kullanan bir kuzey ülkesi.",
+   "k": "1668! Kesecik'in kumbarasından bile eski 😄",
+   "y": 1668,
+   "t": "Riksbank",
+   "id": "q230"
+  },
+  {
+   "c": "kelime",
+   "d": 1,
+   "q": "\"Kâğıt para\" yerine eskiden kullanılan \"banknot\" kelimesi neyin birleşimidir?",
+   "o": [
+    "Banka + not (yazılı belge)",
+    "Banka + nota",
+    "Ban + kanot",
+    "Bank + note müziği"
+   ],
+   "a": 0,
+   "x": "Banknot, İngilizce bank note yani \"banka senedi\" kelimesinden gelir; ilk banknotlar bankaya yatırılan altının senediydi.",
+   "s": "Britannica",
+   "h": "Bankanın verdiği yazılı belge.",
+   "k": "Banknot da bir senetmiş, Kesecik şaşırdı 📝",
+   "id": "q231"
+  },
+  {
+   "c": "deyim",
+   "d": 2,
+   "q": "\"Kesesine güvenmek\" ne demek?",
+   "o": [
+    "Parası olduğu için rahat davranmak",
+    "Çanta taşımak",
+    "Hırsızdan korkmak",
+    "Borç vermek"
+   ],
+   "a": 0,
+   "x": "Kesesine güvenen kişi, yeterince parası olduğundan rahat ve kendinden emin davranır.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Kese = para.",
+   "k": "Kesecik kesesine güveniyor, ben de Kesecik'e 💛",
+   "id": "q232"
+  },
+  {
+   "c": "altin",
+   "d": 2,
+   "q": "Türkiye'de banknotlar hangi kurum tarafından basılır?",
+   "o": [
+    "TCMB Banknot Matbaası",
+    "Darphane",
+    "Hazine",
+    "PTT"
+   ],
+   "a": 0,
+   "x": "Banknotları TCMB'nin Ankara'daki Banknot Matbaası basar; madeni paralar ise Darphane'de basılır.",
+   "s": "TCMB",
+   "h": "Merkez Bankası'nın kendi matbaası.",
+   "k": "Kâğıt Ankara'da, metal İstanbul'da, ne güzel iş bölümü 🤝",
+   "id": "q233"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "\"Gelir – gider = ?\" Bütçede bu farkın artı olmasına ne denir?",
+   "o": [
+    "Bütçe fazlası",
+    "Bütçe açığı",
+    "Faiz",
+    "Vergi"
+   ],
+   "a": 0,
+   "x": "Gelir giderden fazlaysa bütçe fazlası, azsa bütçe açığı oluşur. Hedef, her ay küçük de olsa bir fazla bırakmaktır.",
+   "s": "Finansal okuryazarlık kaynakları",
+   "h": "Açığın tersi.",
+   "k": "Kasacık'ın Özet sayfası bunu ilk satırda gösteriyor 😉",
+   "id": "q234"
+  },
+  {
+   "c": "dunya",
+   "d": 4,
+   "q": "Para birimi kodlarında (TRY, USD) ilk iki harf neyi gösterir?",
+   "o": [
+    "Ülkeyi",
+    "Bankayı",
+    "Yılı",
+    "Kıtayı"
+   ],
+   "a": 0,
+   "x": "ISO 4217 kodlarında ilk iki harf ülke kodudur (TR, US), üçüncü harf genelde paranın adının baş harfidir (Y: yeni lira kuşağından, D: dolar).",
+   "s": "ISO 4217",
+   "h": "TR ve US neyi anlatır?",
+   "k": "AK diye bir para kodu olsaydı benim olurdu 😄",
+   "id": "q235"
+  },
+  {
+   "c": "deyim",
+   "d": 1,
+   "q": "\"Komşu komşunun külüne muhtaçtır\" ne anlatır?",
+   "o": [
+    "İnsanlar en küçük şeyde bile birbirine ihtiyaç duyar",
+    "Kül değerlidir",
+    "Soba yakın",
+    "Komşudan borç alma"
+   ],
+   "a": 0,
+   "x": "En değersiz görünen şeyde bile insanlar birbirine muhtaçtır; yardımlaşma ve iyi komşuluk önemlidir.",
+   "s": "TDK Güncel Türkçe Sözlük",
+   "h": "Kül bile işe yarayabilir.",
+   "k": "Komşudan bir bardak şeker, Kesecik'ten bir kova fındık 🌰",
+   "id": "q236"
+  },
+  {
+   "c": "kelime",
+   "d": 2,
+   "q": "\"Jeton\" kelimesi hangi dilden gelir?",
+   "o": [
+    "Fransızca",
+    "İtalyanca",
+    "İngilizce",
+    "Almanca"
+   ],
+   "a": 0,
+   "x": "Jeton, Fransızca jeton kelimesinden gelir; eskiden hesap yaparken atılan sayma pullarına deniyordu.",
+   "s": "Nişanyan Sözlük",
+   "h": "Kur ve fiş ile aynı dilden.",
+   "k": "Jetonlu telefonları Kesecik hâlâ özlüyor ☎️",
+   "id": "q237"
+  },
+  {
+   "c": "altin",
+   "d": 2,
+   "q": "Altın neden çok ince yapraklar hâline getirilebilir?",
+   "o": [
+    "Çok kolay dövülüp şekil alabildiği için",
+    "Hafif olduğu için",
+    "Sert olduğu için",
+    "Sıvı olduğu için"
+   ],
+   "a": 0,
+   "x": "Altın dövülebilirliği en yüksek metaldir; bir gram altın yaklaşık 1 metrekareye kadar inceltilebilir. Yaldız böyle yapılır.",
+   "s": "Britannica",
+   "h": "Çekiçle dövülünce ne olur?",
+   "k": "Kesecik'in gözlüğüne altın yaldız istiyorum ✨",
+   "id": "q238"
+  },
+  {
+   "c": "butce",
+   "d": 3,
+   "q": "Kasacık'taki \"ay sonunda elinde kalacak\" tutarı neye göre hesaplanır?",
+   "o": [
+    "O ayın gelirleri, devreden ve giderlerin farkına",
+    "Banka bakiyesine",
+    "Yatırımlara",
+    "Geçen yıla"
+   ],
+   "a": 0,
+   "x": "Ay sonu tahmini: devreden para + o ayın gelirleri − o ayın giderleri. Taksitler ve kart ekstreleri de giderlere dahildir.",
+   "s": "Kasacık",
+   "h": "Özet sayfasının en üstündeki kart.",
+   "k": "Bu soruyu Kesecik yazdı, belli 😄",
+   "id": "q239"
+  },
+  {
+   "c": "tarih",
+   "d": 4,
+   "q": "Kasacık'taki Kesecik adını Osmanlı'nın hangi para hesabından alır?",
+   "o": [
+    "Kese (500 kuruş)",
+    "Akçe",
+    "Para",
+    "Lira"
+   ],
+   "a": 0,
+   "x": "Osmanlı'da büyük ödemeler kese ile hesaplanırdı: 1 kese = 500 kuruş. Akçe ise Osmanlı'nın ilk gümüş parasıydı. Kese ile Akçe, para tarihinin iki adı!",
+   "s": "M. Z. Pakalın, Osmanlı Tarih Deyimleri",
+   "h": "İlk günün son sorusunu hatırla.",
+   "k": "Kese ile Akçe, tarihten gelen bir aşk hikâyesi 💛",
+   "id": "q240"
   }
  ]
 }
