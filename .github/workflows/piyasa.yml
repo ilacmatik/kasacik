@@ -19,6 +19,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: piyasa
@@ -35,3 +36,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           python3 scripts/piyasa_dongu.py
+      # Süre dolduğunda gün bitmediyse kendini yeniden başlatır (zamanlanmış tetikleme kaçsa bile zincir kopmaz)
+      - name: Devam ettir
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f .devam ]; then
+            gh api -X POST "repos/$GITHUB_REPOSITORY/actions/workflows/piyasa.yml/dispatches" -f ref=main && echo "Yeni tur başlatıldı."
+          fi

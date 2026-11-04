@@ -65,7 +65,9 @@ def main() -> None:
         nxt = next_slot(dt.datetime.now(dt.timezone.utc))
         wait = (nxt - dt.datetime.now(dt.timezone.utc)).total_seconds()
         if time.time() - start + wait > LIMIT or nxt.time() > END_UTC:
-            print("Bu turun süresi doldu; sonraki tetikleme devam ettirir.", flush=True)
+            print("Bu turun süresi doldu; yeni tur başlatılacak.", flush=True)
+            if nxt.time() <= END_UTC:
+                open(os.path.join(ROOT, ".devam"), "w").close()
             return
         print(f"Sonraki: {nxt:%H:%M} UTC ({wait / 60:.0f} dk)", flush=True)
         time.sleep(max(0, wait))
