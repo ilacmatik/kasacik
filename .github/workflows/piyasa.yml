@@ -1,15 +1,20 @@
 # Kasacık veri sunucusu: borsa fiyatlarını piyasa.json'a yazar (GitHub Pages yayınlar).
 # Herkese açık depoda Actions ücretsizdir; APK derleme kotasını etkilemez.
+#
+# GitHub'ın sık zamanlanmış işleri saatlerce gecikebildiği için iş gün içinde birkaç kez tetiklenir
+# ve her seferinde kendi içinde döner (scripts/piyasa_dongu.py):
+#   BIST seansı (TR 10:00–18:15): 15 dakikada bir · ABD seansı: saatte bir · UTC 21:15'te durur.
+# Aynı anda tek iş çalışır; bir tetikleme kaçarsa ya da gecikirse sonraki devam ettirir.
 name: Piyasa verisi
 
 on:
   schedule:
-    # Saatler UTC (Türkiye = UTC+3).
-    # BIST seansı (10:00–18:15): 15 dakikada bir. Fiyatlar uygulamada "15 dk gecikmeli" gösterilir.
-    - cron: "*/15 7-14 * * 1-5"
-    - cron: "0,15 15 * * 1-5"
-    # ABD seansı (16:30–23:00) ve kapanış: saatte bir, son çalışma 23:30
-    - cron: "30 16-20 * * 1-5"
+    # Saatler UTC (Türkiye = UTC+3)
+    - cron: "50 6 * * 1-5"
+    - cron: "5 9 * * 1-5"
+    - cron: "5 12 * * 1-5"
+    - cron: "5 15 * * 1-5"
+    - cron: "5 18 * * 1-5"
   workflow_dispatch:
 
 permissions:
@@ -22,19 +27,11 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
-      - name: Fiyatları topla
-        run: python3 scripts/piyasa.py
-      - name: Yayınla
+      - name: Fiyatları topla ve yayınla (seans boyunca)
         run: |
-          if git diff --quiet -- piyasa.json 2>/dev/null && git ls-files --error-unmatch piyasa.json >/dev/null 2>&1; then
-            echo "Değişiklik yok."; exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add piyasa.json
-          git commit -m "piyasa.json güncellendi" -q
-          git pull -q --rebase origin main
-          git push -q
+          python3 scripts/piyasa_dongu.py
