@@ -2,10 +2,13 @@
 """
 piyasa.py'yi seans boyunca aralıklarla çalıştırıp piyasa.json'u yayınlar.
 
-GitHub'ın zamanlanmış işleri sık aralıklarda saatlerce gecikebiliyor ya da hiç çalışmıyor
-(3 Kasım'da BIST seansında 15 dakikada bir yerine tek çalışma oldu). Bu yüzden iş birkaç kez
-tetiklenir ve her tetiklenişte en çok ~5 saat 45 dakika boyunca kendi içinde döner:
-  - BIST seansı (TR 09:55–18:20, UTC 06:55–15:20): 15 dakikada bir
+GitHub'ın zamanlanmış işleri saatlerce gecikebiliyor ya da hiç çalışmıyor (3–4 Kasım'da
+seansın bir kısmı kaçtı). Bu yüzden iş bir zincir gibi çalışır: her tur en çok ~5 sa 45 dk
+döner, süresi dolunca kendini yeniden başlatır (.devam → iş akışındaki "Devam ettir" adımı).
+Gece ve hafta sonu fiyat çekmeden bekler; böylece ertesi sabah açılış zamanlayıcıya kalmaz.
+Zamanlanmış tetiklemeler yalnızca zincir koparsa yeniden başlatmak için.
+
+  - BIST seansı (TR 10:00–18:20, UTC 07:00–15:20): 15 dakikada bir
   - ABD seansı ve kapanış (UTC 21:15'e kadar): saatte bir (:31)
 """
 import datetime as dt
@@ -17,6 +20,8 @@ import time
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
 LIMIT = 5 * 3600 + 45 * 60
+OPEN_UTC = dt.time(7, 0, 30)
+SESSION_END_UTC = dt.time(15, 20)
 END_UTC = dt.time(21, 15)
 
 
@@ -41,36 +46,54 @@ def publish() -> None:
     print("uyarı: gönderilemedi", flush=True)
 
 
+def next_open(now: dt.datetime) -> dt.datetime:
+    """Bir sonraki hafta içi açılış (UTC 07:00:30)."""
+    d = now.date()
+    cand = dt.datetime.combine(d, OPEN_UTC, tzinfo=dt.timezone.utc)
+    if cand <= now:
+        d += dt.timedelta(days=1)
+    while d.weekday() >= 5:
+        d += dt.timedelta(days=1)
+    return dt.datetime.combine(d, OPEN_UTC, tzinfo=dt.timezone.utc)
+
+
 def next_slot(now: dt.datetime) -> dt.datetime:
     t = now.time()
-    if dt.time(6, 55) <= t < dt.time(15, 20):
-        m = (now.minute // 15 + 1) * 15
-        base = now.replace(minute=0, second=30, microsecond=0)
-        return base + dt.timedelta(minutes=m)
-    # Seans dışı: saat başı :31 (açılıştan önceyse açılışta)
-    cand = now.replace(minute=31, second=0, microsecond=0)
-    cand = cand if cand > now else cand + dt.timedelta(hours=1)
-    opening = now.replace(hour=7, minute=0, second=30, microsecond=0)
-    return opening if now < opening < cand else cand
+    if now.weekday() < 5:
+        if t < OPEN_UTC:
+            return next_open(now)
+        if t < SESSION_END_UTC:
+            base = now.replace(minute=0, second=30, microsecond=0)
+            return base + dt.timedelta(minutes=(now.minute // 15 + 1) * 15)
+        cand = now.replace(minute=31, second=0, microsecond=0)
+        cand = cand if cand > now else cand + dt.timedelta(hours=1)
+        if cand.time() <= END_UTC and cand.date() == now.date():
+            return cand
+    return next_open(now)
+
+
+def in_window(now: dt.datetime) -> bool:
+    return now.weekday() < 5 and dt.time(6, 55) <= now.time() <= END_UTC
 
 
 def main() -> None:
     start = time.time()
+    if in_window(dt.datetime.now(dt.timezone.utc)):
+        publish()
     while True:
         now = dt.datetime.now(dt.timezone.utc)
-        if now.time() > END_UTC or now.weekday() >= 5:
-            print("Günün penceresi bitti.", flush=True)
+        nxt = next_slot(now)
+        wait = (nxt - now).total_seconds()
+        left = LIMIT - (time.time() - start)
+        if wait > left:
+            # Süre dolmadan bekle, sonra zinciri devam ettir
+            time.sleep(max(0, left - 30))
+            print(f"Tur süresi doldu; yeni tur başlatılacak (sonraki çekim {nxt:%a %H:%M} UTC).", flush=True)
+            open(os.path.join(ROOT, ".devam"), "w").close()
             return
-        publish()
-        nxt = next_slot(dt.datetime.now(dt.timezone.utc))
-        wait = (nxt - dt.datetime.now(dt.timezone.utc)).total_seconds()
-        if time.time() - start + wait > LIMIT or nxt.time() > END_UTC:
-            print("Bu turun süresi doldu; yeni tur başlatılacak.", flush=True)
-            if nxt.time() <= END_UTC:
-                open(os.path.join(ROOT, ".devam"), "w").close()
-            return
-        print(f"Sonraki: {nxt:%H:%M} UTC ({wait / 60:.0f} dk)", flush=True)
+        print(f"Sonraki: {nxt:%a %H:%M} UTC ({wait / 60:.0f} dk)", flush=True)
         time.sleep(max(0, wait))
+        publish()
 
 
 if __name__ == "__main__":

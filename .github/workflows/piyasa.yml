@@ -1,10 +1,10 @@
 # Kasacık veri sunucusu: borsa fiyatlarını piyasa.json'a yazar (GitHub Pages yayınlar).
 # Herkese açık depoda Actions ücretsizdir; APK derleme kotasını etkilemez.
 #
-# GitHub'ın sık zamanlanmış işleri saatlerce gecikebildiği için iş gün içinde birkaç kez tetiklenir
-# ve her seferinde kendi içinde döner (scripts/piyasa_dongu.py):
-#   BIST seansı (TR 10:00–18:15): 15 dakikada bir · ABD seansı: saatte bir · UTC 21:15'te durur.
-# Aynı anda tek iş çalışır; bir tetikleme kaçarsa ya da gecikirse sonraki devam ettirir.
+# GitHub'ın zamanlanmış işleri saatlerce gecikebildiği için iş bir zincir gibi çalışır
+# (scripts/piyasa_dongu.py): her tur en çok ~5 sa 45 dk döner, sonra kendini yeniden başlatır;
+# gece ve hafta sonu fiyat çekmeden bekler. BIST seansı (TR 10:00–18:15): 15 dakikada bir ·
+# ABD seansı: saatte bir. Aşağıdaki zamanlamalar yalnızca zincir koparsa yeniden başlatmak için.
 name: Piyasa verisi
 
 on:
